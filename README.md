@@ -1,45 +1,67 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Feminist Book Review
 
-Welcome USER_NAME,
+This site is the Milestone Project 3 for the Software Development 
+Diploma course at Code Institute. The project is aimed at displaying
+my understanding of Python, micro-framework Flask and MongoDB for
+building the back-end functionality for a CRUD (Create, Read, Update
+Delete) webite.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+A live version of the website can be viewed here.
 
-## Gitpod Reminders
+(Image of the website)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
+The main purpose of this website is to provide a collection of book reviews
+to facilitate the interested reader in finding a book in the genre of feminist
+literature that he or she wants to read - and by doing so also spreading this 
+literature to more readers. Through the functionality of adding, editing and
+deleting book reviews, the site is meant to be a living fora for the reader to
+share their thoughts and reflections on different books. The possibility of 
+sharing experiences with others works as a motivator for reading and thus learning 
+and discovering by exploring new books. In this way, the site aims both to increase
+the reading of feminist literature and to build a sense of community around the reading.
+To further add to this, a future functionality to add to the site could be some kind
+of discussion board for sharing thoughts directly with each other, or to organize 
+book clubs and read and discuss together in person or virtually.
 
-Another blue button should appear to click: *Open Browser*.
+### Site goals and user goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The site goals of this website is to:
+* Facilitate finding books in the genre of feminist literature in order to aid in spreading
+  this literature to more readers
+* Increase reading by motivating readers by giving the opportunity to share their thoughts
+  and reflections on books they have read
 
-A blue button should appear to click: *Make Public*,
+The clients goals of this website is to:
+* Find suggestionsfor feminist books to read
+* Get information about what others have thought about different books
+* Be able to add books that they have read themselves and to share their thoughts and 
+  reflections on them
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## UX
 
-## Updates Since The Instructional Video
+### Ideal client
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The ideal client for this website is:
+* An reader already interested in feminist literature
+* A person curious about exploring the genre of feminist literature
+* English speaking
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+Visitors to this site are looking for:
+* Finding books to read in the genre of feminist literature
+* Sharing their own thoughts and reflections on feminist books that they have read
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+This project is the best way to help them achieve this because:
+* This website provides an easy way to find feminist books reviewed by others, either
+  by scrolling a list or by searching
+* It provides the possibility for the user to register their own account and register
+  and administer reviews of books they have read
+* it has a clear and well structured design and is responsive, making it easy for the
+  user to find the information they are looking for
+* This website is easy to navigate, as it provides navigation options on both top and 
+  bottom of the page
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+### User stories
