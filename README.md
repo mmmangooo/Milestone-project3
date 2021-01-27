@@ -65,3 +65,64 @@ This project is the best way to help them achieve this because:
 
 
 ### User stories
+
+  1. As a first time visitor, I want to quickly get an overview of what this site is for
+
+![Wireframe of index page description on mobile](./assets/images/site-description-mobile.png)
+![Wireframe of index page description on tablet](./assets/images/site-description-tablet.png)
+![Wireframe of index page description on web page](./assets/images/site-description-web.png)
+
+  2. As a user, I want to easily navigate to the different parts of the site and back again
+
+![Wireframe of navigation bar on top of page](./assets/images/top-navigation.png)
+![Wireframe of navigation links on bottom of page](./assets/images/bottom-navigation.png)
+
+  3. As a user, I want the site to be responsive so that I can easily view and use it on different
+     devices
+
+![Wireframe of index page on mobile](./assets/images/index-mobile.png)
+![Wireframe of index page on tablet](./assets/images/index-tablet.png)
+![Wireframe of index page on web browser](./assets/images/index-web.png)
+
+  4. As a user, I want to be able to search for a specific book or author on the site
+
+![Wireframe of search field](./assets/images/search.png)
+
+  5. As a user, I want to read the review in an enlarged full-size field of its own so it's not cluttered by other content
+
+![Wireframe of review-read field](./assets/images/review.png)
+
+  6. As a user, I want to be able to upvote or downvote books on the site to share my opinion on books reviewed by others
+
+![Wireframe of review-read field](./assets/images/vote.png)
+
+  7. As a user, I want to be able to register my own user account on the site 
+
+![Wireframe of sign-up modal](./assets/images/sign-up.png)
+
+  8. As a registered user, I want to be able to create my own reviews of books I have read
+
+![Wireframe of sign-in modal](./assets/images/sign-in.png)
+
+![Wireframe of create-review modal](./assets/images/create.png)
+
+  9. As a registered user, I want to be able to edit or delete my book reviews
+
+![Wireframe of edit/delete review modal](./assets/images/edit-delete.png)
+
+  10. As a user, I want to be able to navigate back to the main site if I end up on a page that doesnt exist, or if a link is broken
+
+![Wireframe of 404 page on mobile](./assets/images/404-page-mobile.png)
+![Wireframe of 404 page on tablet](./assets/images/404-page-tablet.png)
+![Wireframe of 404 page in web browser](./assets/images/404-page-web.png)
+
+  11. As a user, I want to be able to contact the site owner to report errors on the site or suggest changes or additions to the site
+
+![Wireframe of contact modal](./assets/images/contact.png)
+
+  12. As a returning visitor, I want to see what new books have been added to the site
+
+![Wireframe of contact modal](./assets/images/new-books.png)
+
+
+
