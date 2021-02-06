@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feminist Book Site</title>
+</head>
+<body>
+    {% for book in books %}
+        {{ book.title }}<br>
+        {{ book.author }} <br>
+        {{ book.image }}<br>
+        {{ book.description }}<br>
+        {{ book.date_of_adding }}<br>
+    {% endfor %}
+</body>
+</html>
