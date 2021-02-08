@@ -64,39 +64,53 @@ This project is the best way to help them achieve this because:
 
 ### User stories
 
-  1. As a first time visitor, I want to quickly get an overview of what this site is for
+  1. As a first time visitor, I want to quickly get an overview of what this site is for so that I can decide 
+     if the site provides the services I am looking for
 
-![Wireframe of index page description on mobile](./readme-assets/readme-images/site-description-mobile.png)
+![Wireframe of index page description on mobile](./readme-assets/readme-images/site-description.png)
 
-  2. As a user, I want to be able to search for a specific book or author on the site
+  2. As a user, I want to be able to search for a specific book or books by a specific author on the site
 
 ![Wireframe of search field](./readme-assets/readme-images/search.png)
 
-  3. As a user, I want to be able to easily view the books on the site so that I can find someone I am interested in
+  3. As a user, I want to be able to easily view the books on the site so that I can find an interesting book
 
 ![Wireframe of book list on index page on mobile](./readme-assets/readme-images/index-mobile.png)
 ![Wireframe of book list on index page on tablet](./readme-assets/readme-images/index-tablet.png)
 ![Wireframe of book list on index page in web-browser](./readme-assets/readme-images/index-web.png)
 
-  4. As a returning visitor, I want to see what new books have been added to the site
+  4. As a returning visitor, I want to see what new books have been added to the site so that I can easily know
+     if there has been any interesting additions since my last visit
 
-![Wireframe of contact modal](./readme-assets/readme-images/new-books.png)
+![Wireframe of new books section on index page](./readme-assets/readme-images/new-books.png)
 
-  5. As a user, I want to be able to upvote or downvote books on the site to share my opinion on books reviewed by others
+  5. As a user, I want to be able to upvote or downvote books on the site so that I can easily share my opinion on books
 
 ![Wireframe of review-read field](./readme-assets/readme-images/vote.png)
 
   6. As a user, I want to be able to add books I have read so that I can share tips and thoughts with others
 
-![Wireframe of add-book modal](./readme-assets/readme-images/add-book.png)
+![Wireframe of add-book mobile page](./readme-assets/readme-images/add-book-mobile.png)
+
+![Wireframe of add-book tablet page](./readme-assets/readme-images/add-book-tablet.png)
+
+![Wireframe of add-book web page](./readme-assets/readme-images/add-book-web.png)
 
   7. As a user, I want to be able to edit books so that I can correct any mistakes or add more information in the description of the book
 
-![Wireframe of edit book modal](./readme-assets/readme-images/edit-book.png)
+![Wireframe of edit book mobile page](./readme-assets/readme-images/edit-book-mobile.png)
+
+![Wireframe of edit book tablet page](./readme-assets/readme-images/edit-book-tablet.png)
+
+![Wireframe of edit book web page](./readme-assets/readme-images/edit-book-web.png)
 
   8. As a user, I want to be able to delete books so that I can remove any books that I believe is not in the right genre for this site
 
-![Wireframe of delete book modal](./readme-assets/readme-images/delete-book.png)
+![Wireframe of delete book mobile page](./readme-assets/readme-images/delete-book-mobile.png)
+
+![Wireframe of delete book tablet page](./readme-assets/readme-images/delete-book-tablet.png)
+
+![Wireframe of delete book web page](./readme-assets/readme-images/delete-book-web.png)
 
   9. As a user, I want to be able to contact the site owner to report errors on the site or suggest changes or additions to the site
 
