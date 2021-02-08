@@ -124,11 +124,13 @@ This project is the best way to help them achieve this because:
 
 
 
-# Credits
+## Credits
 
-## Technologies used
+### Technologies used
 
-* [Picresize.com was used to resize images](https://picresize.com/)
+* 
+
+* [Picresize.com](https://picresize.com/) was used to resize images
 
 
 
