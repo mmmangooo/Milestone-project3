@@ -13,9 +13,9 @@
     <body>
 
 
-        <nav class="nav-extended purple">
+        <nav class="nav-extended purple lighten-1">
             <div class="nav-wrapper ">
-                <a href="index.html" class="brand-logo right center"><img src="./assets/images/logo.png" alt=""></a>
+                <a href="{{ url_for('get_books')}}" class="brand-logo right center nav-logo"><img src="{{url_for('static', filename='./images/favicon.ico')}}" alt=""></a>
                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="fas fa-bars"></i>
                </a>

@@ -136,6 +136,10 @@ This project is the best way to help them achieve this because:
 
 * [Picresize.com](https://picresize.com/) was used to resize images
 
+* [Logo created in Canva tool](https://www.canva.com/)
+
+* [Favicon.io](https://favicon.io/) was used for converting logo image to favicon
+
 
 
 
