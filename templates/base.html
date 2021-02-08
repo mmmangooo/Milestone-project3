@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <meta name="description" content="This page provides the functionality of scrolling or searching to find books in the category 
+        of feminist literature, as well as the possibility to add, edit, upvote/downvote and delete books.">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
@@ -12,35 +13,47 @@
     <body>
 
 
-        <nav>
-            <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo right center"><img src="./assets/images/favicon.ico" alt=""></a>
+        <nav class="nav-extended purple">
+            <div class="nav-wrapper ">
+                <a href="index.html" class="brand-logo right center"><img src="./assets/images/logo.png" alt=""></a>
+               <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="fas fa-bars"></i>
+               </a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li>
-                        <a href="sass.html">Sass</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="badges.html">Components</a>
+                        <a href="badges.html">Add Book</a>
                     </li>
                     <li>
-                        <a href="collapsible.html">JavaScript</a>
+                        <a href="collapsible.html">Edit Book</a>
+                    </li>
+                    <li>
+                        <a href="collapsible.html">Delete Book</a>
+                    </li>
+                    <li>
+                        <a href="collapsible.html">Contact</a>
                     </li>
                 </ul>
             </div>
 
             <ul class="sidenav" id="mobile-demo">
-                <li>
-                    <a href="sass.html">Sass</a>
-                </li>
-                <li>
-                    <a href="badges.html">Components</a>
-                </li>
-                <li>
-                    <a href="collapsible.html">Javascript</a>
-                </li>
-                <li>
-                    <a href="mobile.html">Mobile</a>
-                </li>
+              <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="badges.html">Add Book</a>
+                    </li>
+                    <li>
+                        <a href="collapsible.html">Edit Book</a>
+                    </li>
+                    <li>
+                        <a href="collapsible.html">Delete Book</a>
+                    </li>
+                    <li>
+                        <a href="collapsible.html">Contact</a>
+                    </li>
             </ul>
         </nav>
 

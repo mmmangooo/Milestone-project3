@@ -128,7 +128,11 @@ This project is the best way to help them achieve this because:
 
 ### Technologies used
 
-* 
+* This site is built with HMTL, CSS, JavaScript and Python languages
+
+* [jQuery](https://jquery.com/) was used for simplifying the use of Javascript
+
+* [Materialize framework](https://materializecss.com/) was used for easy implementation of grid systems, styling, navbar and carousel
 
 * [Picresize.com](https://picresize.com/) was used to resize images
 
