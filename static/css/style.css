@@ -19,6 +19,10 @@ nav ul li a {
     box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2);
 }
 
+.input-field label {
+    color: #686251;
+}
+
 footer {
     position: relative;
     bottom: 0;
