@@ -26,9 +26,21 @@ def get_books():
     return render_template("index.html", books=books)
 
 
-@app.route("/add_book")
+@app.route("/add_book", methods=["GET", "POST"])
 def add_book():
-    return render_template("add_book.html")
+    if request.method == "POST":
+        book = {
+            "title": request.form.get("title"),
+            "author": request.form.get("author"),
+            "image": request.form.get("image"),
+            "description": request.form.get("description"),
+            "rating": request.form.get("rating")
+        }
+        mongo.db.books.insert_one(book)
+        flash("You successfully added a book!")
+        return redirect(url_for("get_books"))
+    books = mongo.db.books.find().sort("title", 1)
+    return render_template("add_book.html", books=books)
 
 
 @app.route("/edit_book")
