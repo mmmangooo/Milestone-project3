@@ -1,5 +1,7 @@
 {% extends "base.html" %}
-<body>
+
+{% block content %}
+<div class="center-align">
     {% for book in books %}
         {{ book.title }}<br>
         {{ book.author }} <br>
@@ -8,4 +10,5 @@
         {{ book.rating }} <br>
         {{ book.date_of_adding }}<br>
     {% endfor %}
-</body>
+</div>
+{% endblock %}

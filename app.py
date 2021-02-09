@@ -31,6 +31,21 @@ def add_book():
     return render_template("add_book.html")
 
 
+@app.route("/edit_book")
+def edit_book():
+    return render_template("edit_book.html")
+
+
+@app.route("/delete_book")
+def delete_book():
+    return render_template("delete_book.html")
+
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

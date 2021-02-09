@@ -1,7 +1,7 @@
-$(document).ready(function() {
-$('.sidenav').sidenav();
-});
+var instance = M.FormSelect.getInstance(elem);
 
 $(document).ready(function() {
-    $('select').formSelect();
+$('.sidenav').sidenav();
+$('select').formSelect();
+$('tooltipped').tooltip();
 });

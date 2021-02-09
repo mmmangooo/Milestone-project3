@@ -27,37 +27,40 @@
                         <a href="{{ url_for('add_book')}}">Add Book</a>
                     </li>
                     <li>
-                        <a href="collapsible.html">Edit Book</a>
+                        <a href="{{ url_for('edit_book')}}">Edit Book</a>
                     </li>
                     <li>
-                        <a href="collapsible.html">Delete Book</a>
+                        <a href="{{ url_for('delete_book')}}">Delete Book</a>
                     </li>
                     <li>
-                        <a href="collapsible.html">Contact</a>
+                        <a href="c{{ url_for('contact')}}">Contact</a>
                     </li>
                 </ul>
             </div>
 
             <ul class="sidenav" id="mobile-demo">
               <li>
-                        <a href="index.html">Home</a>
+                        <a href="{{ url_for('get_books')}}">Home</a>
                     </li>
                     <li>
                         <a href="{{ url_for('add_book')}}">Add Book</a>
                     </li>
                     <li>
-                        <a href="collapsible.html">Edit Book</a>
+                        <a href="{{ url_for('edit_book')}}">Edit Book</a>
                     </li>
                     <li>
-                        <a href="collapsible.html">Delete Book</a>
+                        <a href="{{ url_for('delete_book')}}">Delete Book</a>
                     </li>
                     <li>
-                        <a href="collapsible.html">Contact</a>
+                        <a href="{{ url_for('contact')}}">Contact</a>
                     </li>
             </ul>
         </nav>
 
-        <footer class="page-footer purple darken-2 center-align">
+        {% block content %}
+     {% endblock %}
+
+        <footer class="page-footer purple center-align">
           
          <p> ©  Copyright 2021 Isabelle Ängsås</p>
     

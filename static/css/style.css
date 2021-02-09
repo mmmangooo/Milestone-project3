@@ -7,8 +7,16 @@ body {
 }
 
 nav ul li a {
-    color: #6a1b9a;
+    color: #9c27b0 ;
     font-weight: bold;
+}
+
+.form-container {
+    margin: 4rem;
+    padding: 2rem;
+    border: 0.2rem solid #adaaa1de;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2);
 }
 
 footer {
