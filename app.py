@@ -8,10 +8,10 @@ from bson.objectid import ObjectId
 if os.path.exists("env.py"):
     import env
 
-
+# Creating an instance of Flask app
 app = Flask(__name__)
 
-
+# Setting config vars and getting their values from env.py
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
@@ -24,17 +24,12 @@ mongo = PyMongo(app)
 @app.route("/get_books")
 def get_books():
     books = mongo.db.books.find()
-    return render_template("index.html", books=books)
-
-
-@app.route("/get_books")
-def recently_added():
+    datetime_now = datetime.now()
     # Querying the db for the 3 most recently added books
     # Credit for this code: https://api.mongodb.com/python/2.0/tutorial.html
-    datetime_now = datetime.now()
-    books = mongo.db.books.find(
+    new_books = mongo.db.books.find(
         {"date_of_adding": {"$lt": datetime_now}}, limit=3).sort("title")
-    return render_template("index.html", books=books)
+    return render_template("index.html", books=books, new_books=new_books)
 
 
 @app.route("/add_book", methods=["GET", "POST"])
@@ -44,13 +39,12 @@ def add_book():
         # Credit for code passing the date of adding a book to the db:
         # https://kb.objectrocket.com/mongo-db/how-to-insert-a-document-into-a-mongodb-collection-using-python-367
         # #add+the+date+and+time+in+python+when+you+insert+mongodb+documents
-        datetime_now = datetime.now()
         book = {
             "title": request.form.get("title"),
             "author": request.form.get("author"),
             "description": request.form.get("description"),
             "rating": request.form.get("rating"),
-            "date_of_adding": datetime_now
+            "date_of_adding": datetime.now()
         }
         mongo.db.books.insert_one(book)
         flash("You successfully added a book!")

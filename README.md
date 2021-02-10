@@ -123,6 +123,40 @@ This project is the best way to help them achieve this because:
 ![Wireframe of 404 page in web browser](./readme-assets/readme-images/404-page-web.png)
 
 
+Link to full sized wireframe images:
+
+
+### Database design
+
+
+### Design
+
+* Color scheme:
+
+* Imagery:
+
+* Typography:
+
+
+### Features
+
+Navigation bar and logo is present of every page on the site for easily accessible navigation.
+On smaller screens, the navigation bar is displayed as a hamburger menu, showing nav links when being
+clicked, which is to ensure responsiveness. All pages on the site also contains a footer with copyright
+info.
+
+#### Index page
+
+At the top of the index page is a header and a subheader that explains what this page is for, so that the user
+can quickly decide if this page provides the functionality that they are looking for.
+The index page contains the main content of the site, which is the books, and those are displayed on cards
+arranged in a simple and responsive grid system. The user can find books by scrolling through the cards, to ensure 
+an easy way to overview what books are present on the page. The user that knows which book or author they are looking for 
+can also use the search bar on the page to find that book or books by that author. Present on the index page is also
+a slider showing the three latest books that have been added to the site, so that the returning visitor can easily
+see what books have been added since they visited last time. 
+
+
 
 ## Credits
 

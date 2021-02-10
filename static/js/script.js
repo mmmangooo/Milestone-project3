@@ -2,5 +2,7 @@ $(document).ready(function() {
 $('.sidenav').sidenav();
 $('select').formSelect();
 $('tooltipped').tooltip();
-$('slider').slider();
+$('.carousel').carousel({
+    indicators: true
+});
 });
