@@ -3,6 +3,7 @@ from flask import (
     Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
+from datetime import datetime
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
     import env
@@ -26,15 +27,30 @@ def get_books():
     return render_template("index.html", books=books)
 
 
+@app.route("/get_books")
+def recently_added():
+    # Querying the db for the 3 most recently added books
+    # Credit for this code: https://api.mongodb.com/python/2.0/tutorial.html
+    datetime_now = datetime.now()
+    books = mongo.db.books.find(
+        {"date_of_adding": {"$lt": datetime_now}}, limit=3).sort("title")
+    return render_template("index.html", books=books)
+
+
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
+    # Adds instance of book to db:
     if request.method == "POST":
+        # Credit for code passing the date of adding a book to the db:
+        # https://kb.objectrocket.com/mongo-db/how-to-insert-a-document-into-a-mongodb-collection-using-python-367
+        # #add+the+date+and+time+in+python+when+you+insert+mongodb+documents
+        datetime_now = datetime.now()
         book = {
             "title": request.form.get("title"),
             "author": request.form.get("author"),
-            "image": request.form.get("image"),
             "description": request.form.get("description"),
-            "rating": request.form.get("rating")
+            "rating": request.form.get("rating"),
+            "date_of_adding": datetime_now
         }
         mongo.db.books.insert_one(book)
         flash("You successfully added a book!")
