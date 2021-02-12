@@ -9,10 +9,9 @@ $('.carousel').carousel({
 let counter = 0;
 $('#upVote').click(function(){
     counter++;
-$('#count').text(counter);
-});
 $('#downVote').click(function(){
     counter--;
+});
 $('#count').text(counter);
 });
 });

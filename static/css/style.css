@@ -11,6 +11,15 @@ nav ul li a {
     font-weight: bold;
 }
 
+.vote-btn {
+    display: inline;
+    border: none;
+    background-color: #fff;
+    color: #686251;
+}
+
+
+
 .form-container {
     margin: 4rem;
     padding: 2rem;

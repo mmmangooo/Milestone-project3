@@ -39,7 +39,7 @@
                                 <img src="https://img.icons8.com/fluent/36/000000/star.png"/>
                             {% endif %}
                         </div>
-
+              
                         <p>
                             {{ book.description }}</p>
                     </div>
@@ -80,15 +80,19 @@
                                 <img src="https://img.icons8.com/fluent/36/000000/star.png"/>
                             {% endif %}
                         </div>
-                        <div class="upvote center-align"></div>
+                        <div class="vote">
+                            <button class="vote-btn" id= "upVote">
+                                <i class="material-icons">thumb_up</i>
+                            </button>
+                            <span id="count">0</span>
+                            <button class="vote-btn" id="downVote">
+                                <i class="material-icons">thumb_down</i>
+                            </button>
+
+                        </div>
                         <p>
                             {{ book.description }}</p>
-                            <div class="vote">
-                                <button id="upVote">Upvote book</button>
-                                <p id="count">0</p>
-                                <button id="downVote">Downvote book</button>
-                                
-                            </div>
+
                     </div>
 
                 </div>
