@@ -156,6 +156,9 @@ can also use the search bar on the page to find that book or books by that autho
 a slider showing the three latest books that have been added to the site, so that the returning visitor can easily
 see what books have been added since they visited last time. 
 
+#### Add book page
+On this page there is a form that the user can fill out to add a book to the page.
+
 
 
 ## Credits

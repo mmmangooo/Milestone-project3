@@ -1,5 +1,5 @@
 body {
-    background-color: #fcf9f0de;
+    background-color: #fffaefde;
 }
 
 /* --------------Headers and text elements */
@@ -19,19 +19,39 @@ h4 {
 }
 
 nav ul li a {
-    color: #9c27b0;
+    color: #7b1fa2;
     font-weight: bold;
 }
 
 /* --------------Recently added books carousel */
 
 .carousel-container {
-    margin: 6rem 0;
-}
-.carousel {
-    width: 80%;
+    margin: 6rem 0 0;
 }
 
+.carousel {
+    width: 80%;
+    padding: 2rem;
+}
+
+.indicator-item {
+    color: #686251;
+}
+
+
+/*-------------------  Search */
+.search-container {
+    margin: 2rem auto 8rem;
+    padding: 1rem;
+    border: 0.1rem solid #adaaa1de;
+    border-radius: 1rem;
+    width: 80%;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
+.search-container button {
+    margin: 2rem 0 0;
+}
 
 /* --------------Book cards */
 
@@ -55,16 +75,17 @@ nav ul li a {
 hr {
     border-top: 0.15rem solid #9b27b0c5;
     border-bottom: none;
-    border-radius: 4rem;
+    border-radius: 6rem;
     width: 60%;
     margin-top: 6rem;
     margin-bottom: 8rem;
 }
 
 
-.icon-links {
+.icon-links p{
     text-decoration: none;
-    color: #9b27b0c5; 
+    color: #7b1fa2;
+    font-weight: bold; 
 }
 
 /*--------------------Forms*/
@@ -81,6 +102,8 @@ hr {
     color: #686251;
 }
 
+/*--------------------Footer */
+
 footer {
     position: relative;
     bottom: 0;
@@ -92,4 +115,20 @@ footer {
 footer a {
     text-decoration: none;
     color: #fff;
+}
+
+/*---------------------Media queries */
+
+@media screen and (min-width: 768px) {
+    .search-container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+ .search-container {
+        width: 40%;
+    }
+}
+
 }
