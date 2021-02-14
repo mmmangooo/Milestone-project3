@@ -5,11 +5,12 @@ body {
 /* --------------Headers and text elements */
 
 h1 {
-    font-size: 3.5rem;
+    margin: 4rem 0 0;
+    font-size: 3.2rem;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 /* --------------Navigation bar */
@@ -76,9 +77,9 @@ hr {
     border-top: 0.15rem solid #9b27b0c5;
     border-bottom: none;
     border-radius: 6rem;
-    width: 60%;
-    margin-top: 6rem;
-    margin-bottom: 8rem;
+    width: 80%;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
 }
 
 
@@ -131,4 +132,3 @@ footer a {
     }
 }
 
-}
