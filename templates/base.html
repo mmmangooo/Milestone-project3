@@ -9,6 +9,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script>
+            (function () {
+                emailjs.init("user_3dtZa3MhdNgPtUx4ztBPG");
+            })();
+        </script>
         <title>Feminist book site</title>
     </head>
     <body>
@@ -22,38 +28,38 @@
                </a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li>
-                        <a href="{{ url_for('get_books')}}">Home</a>
+                        <a href="{{ url_for('get_books') }}">Home</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('add_book')}}">Add Book</a>
+                        <a href="{{ url_for('add_book') }}">Add Book</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('edit_book')}}">Edit Book</a>
+                        <a href="{{ url_for('edit_book') }}">Edit Book</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('delete_book')}}">Delete Book</a>
+                        <a href="{{ url_for('delete_book') }}">Delete Book</a>
                     </li>
                     <li>
-                        <a href="c{{ url_for('contact')}}">Contact</a>
+                        <a href="{{ url_for('contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>
 
             <ul class="sidenav" id="mobile-demo">
               <li>
-                        <a href="{{ url_for('get_books')}}">Home</a>
+                        <a href="{{ url_for('get_books') }}">Home</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('add_book')}}">Add Book</a>
+                        <a href="{{ url_for('add_book') }}">Add Book</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('edit_book')}}">Edit Book</a>
+                        <a href="{{ url_for('edit_book') }}">Edit Book</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('delete_book')}}">Delete Book</a>
+                        <a href="{{ url_for('delete_book') }}">Delete Book</a>
                     </li>
                     <li>
-                        <a href="{{ url_for('contact')}}">Contact</a>
+                        <a href="{{ url_for('contact') }}">Contact</a>
                     </li>
             </ul>
         </nav>

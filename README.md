@@ -177,8 +177,9 @@ see what books have been added since they visited last time.
 
 ### Code
 
-* [Code for passing the date of adding a book to the database:] (https://kb.objectrocket.com/mongo-db/how-to-insert-a-document-into-a-mongodb-collection-using-python-367#add+the+date+and+time+in+python+when+you+insert+mongodb+documents)
-* [Code for querying the db for 3 most recently added books:](https://api.mongodb.com/python/2.0/tutorial.html)
+* [Code for passing the date of adding a book to the database](https://kb.objectrocket.com/mongo-db/how-to-insert-a-document-into-a-mongodb-collection-using-python-367#add+the+date+and+time+in+python+when+you+insert+mongodb+documents)
+* [Code for querying the db for 3 most recently added books](https://api.mongodb.com/python/2.0/tutorial.html)
+* [Code for creating upvote/downvote functionality](https://codepen.io/hilaura13/pen/ztmpf)
 
 
 

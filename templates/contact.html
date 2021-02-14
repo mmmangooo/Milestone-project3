@@ -3,32 +3,41 @@
 {% block content %}
     <h2 class="center-align purple-text darken-4-text">Contact Us</h2>
     <p class="center-align">Do you have questions, input or feedback on this site, or want to report an error? 
-        Please fill in the form to contact us!</p>
+        Please fill out this form to contact us!</p>
     <div class="container s12 m6 l2">
-        <div class="row form-container">
+        <div class="row form-container" onsubmit="return sendMail(this);">
 
             <div class="row">
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">First Name</label>
+                            <input id="fullname" name="fullname" type="text" class="validate" placeholder="Your full name" required>
+                            <label for="fullname">Full Name</label>
                         </div>
                         <div class="input-field col s6">
                             <div class="row">
                                 
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="email" type="email" class="validate">
-                                            <label for="email">Email</label>
+                                            <input id="emailaddress" name="emailaddress" type="email" class="validate" placeholder="Your emailaddress" required>
+                                            <label for="emailaddress">Email</label>
                                             <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
                                         </div>
                                     </div>
                               
                             </div>
                         </div>
+                        <div class="input-field">
+                            <textarea name="message" id="message" cols="30" rows="6" class="validate" placeholder="Write your message here" required></textarea>
+                        </div>
                     </div>
+                    <button type="submit">Send</button>
+                    <div id="success-alert" style="display:none">Your mail has been successfully sent!</div>
+                     <div id="error-alert" style="display:none">Your email was not sent, please try again</div>
+                    
+                   
+                   
                 </form>
             </div>
         </div>
