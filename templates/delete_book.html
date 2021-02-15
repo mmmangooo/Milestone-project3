@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2 class="center-align purple-text darken-4-text">Delete Book</h2>
-    <div class="container s12 m6 l2">
+    <h1 class="center-align teal-text text-darken-4">Delete Book</h1>
+    <div class="container s12 m6 l2 white">
         <div class="row form-container">
 
             <form class="col s12" method="POST" action="{{ url_for('delete_book', book_id=book._id) }} ">
@@ -23,7 +23,7 @@
                
 
                 <div class="row center-align">
-                    <button class="btn pink lighten-1" type="submit" name="action">Delete book
+                    <button class="btnpink accent-3" type="submit" name="action">Delete book
                         <i class="fas fa-arrow-alt-circle-right"></i>
                     </button>
                 </div>

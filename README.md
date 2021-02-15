@@ -177,6 +177,8 @@ On this page there is a form that the user can fill out to add a book to the pag
 
 * [Favicon.io](https://favicon.io/) was used for converting logo image to favicon
 
+* [Unicorn Revealer Tool](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+
 
 ### Code
 
