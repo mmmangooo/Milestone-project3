@@ -25,15 +25,15 @@ h4 {
     display: none;
     width: 40%;
     position: relative;
-    top: 12rem;
+    top: 3rem;
 }
 
 .glasses-image {
     display: none;
     width: 20%;
     position: relative;
-    bottom: 1rem;
-    right: 4rem;
+    top: 2.5rem;
+    right: 5rem;
 }
 
 /* --------------Navigation bar */
@@ -44,7 +44,7 @@ h4 {
 }
 
 nav ul li a {
-    color: #f50057;
+    color: #ff5252;
     font-weight: bold;
 }
 
@@ -95,7 +95,7 @@ nav ul li a {
 }
 
 .search-container p {
-    margin: 1rem 0 0;
+    margin: 1.6rem 0 0;
     font-weight: bold;
     font-size: 1.2rem;
 }

@@ -3,16 +3,19 @@
 {% block content %}
     <div class="intro-container">
         <div class="row">
-            <div class="col s12 l6">
+            <div class="col s12">
                 <h1 class="center-align teal-text text-darken-4">Feminist book site</h1>
                 <h6 class="center-align teal-text text-darken-4">Find your new favourite books here - and add books that you want others to read!</h6>
-                <img class="woman-reading" src="{{ url_for('static', filename='./images/woman-reading.png') }}" alt="Woman sitting with her legs crossed and reading a book"></div>
-                <div class="col s12 l6">
-                    <img class="glasses-image" src="{{ url_for('static', filename='./images/glasses.png') }}" alt="Pink glasses">
-                        <img class="book-image" src="{{ url_for('static', filename='./images/books-image.png') }}" alt="Pink book with a cover saying 'With books, you can go places!', and some green leaves sticking out of it"></div>
+            </div>
+            <div class="col s12 l6">
+                <img class="woman-reading" src="{{ url_for('static', filename='./images/woman-reading.png') }}" alt="Woman sitting with her legs crossed and reading a book">
+            </div>
+            <div class="col s6">
+                <img class="glasses-image" src="{{ url_for('static', filename='./images/glasses.png') }}" alt="Pink glasses">
+                    <img class="book-image" src="{{ url_for('static', filename='./images/books-image.png') }}" alt="Pink book with a cover saying 'With books, you can go places!', and some green leaves sticking out of it"></div>
 
-                    </div>
-                </div>
+            </div>
+        </div>
 
                 <div class="carousel-wrapper">
                     <div class="carousel-container">
@@ -65,20 +68,20 @@
                     <form action="" method="POST">
                         <div class="row">
                             <div class="col s4">
-                                <p class="teal-text text-darken-4">Search for book</p>
+                                <p class="red-text text-accent-2">Search for book</p>
                             </div>
                             <div class="col s4">
                                 <input type="text" name="query" id="query" minlength="3" class="validate" placeholder="Enter title or author" required>
                                     <label for="query"></label>
-                                </div>
-                                <div class="col s4">
-                                    <button type="submit" class="btn pink accent-3" name="action">Search</button>
-                                </div>
-
                             </div>
-                        </form>
+                                <div class="col s4">
+                                    <button type="submit" class="btn red accent-2" name="action">Search</button>
+                                </div>
 
-                    </div>
+                        </div>
+                    </form>
+
+                </div>
 
                     <div class="row">
                         {% for book in books %}
