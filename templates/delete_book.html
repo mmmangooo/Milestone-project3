@@ -5,13 +5,13 @@
     <div class="container s12 m6 l2">
         <div class="row form-container">
 
-            <form class="col s12" method="POST" action="">
+            <form class="col s12" method="POST" action="{{ url_for('delete_book', book_id=book._id) }} ">
                  <div class="row">
                     <div class="input-field col s12">
                          
                         <select id="delete_book" name="delete_book" class="validate" required>
                           {% for book in books %} 
-                                <option value="{{ books.title }}">{{ books.title }}
+                                <option value="{{ book.title }}">{{ book.title }}
                                 </option>
                             
                            {% endfor %}
@@ -23,7 +23,7 @@
                
 
                 <div class="row center-align">
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Delete book
+                    <button class="btn pink lighten-1" type="submit" name="action">Delete book
                         <i class="fas fa-arrow-alt-circle-right"></i>
                     </button>
                 </div>
