@@ -92,7 +92,7 @@ hr {
 /*--------------------Forms*/
 
 .form-container {
-    margin: 4rem;
+    margin: 6rem auto;
     padding: 2rem;
     border: 0.2rem solid #adaaa1de;
     border-radius: 1rem;
