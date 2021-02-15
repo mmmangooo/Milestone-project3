@@ -13,16 +13,27 @@ h4 {
     font-size: 1.8rem;
 }
 
+/*--------------------- Images */
+
+.woman-reading {
+    width: 30%;
+    position: relative;
+    top:4rem;
+}
+
 .book-image {
+    display: none;
     width: 40%;
-    margin: 3rem 0 0 0;
+    position: relative;
+    top: 12rem;
 }
 
 .glasses-image {
     display: none;
     width: 20%;
     position: relative;
-    bottom: 0;
+    bottom: 1rem;
+    right: 4rem;
 }
 
 /* --------------Navigation bar */
@@ -165,6 +176,9 @@ footer a {
 }
 
 @media screen and (min-width: 992px) {
+    .book-image {
+        display: inline-block;
+    }
     .glasses-image {
         display: inline-block;
     }
