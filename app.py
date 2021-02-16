@@ -67,8 +67,9 @@ def add_book():
     return render_template("add_book.html", books=books)
 
 
-@app.route("/edit_book/<book_id>", methods=["POST"])
-def edit_book(book_id):
+@app.route("/edit_book/", methods=["GET", "POST"])
+def edit_book():
+    book_id = request.form.get("edit_book")
     if request.method == "POST":
         submit = {
             "title": request.form.get("title"),
@@ -78,15 +79,16 @@ def edit_book(book_id):
         }
         mongo.db.books.update({"_id": ObjectId(book_id)}, submit)
         flash("You have successfully edited book information!")
-    return render_template("edit_book.html")
+    return redirect("/nav_edit/")
 
 
-@app.route("/delete_book/<book_id>", methods=["POST"])
-def delete_book(book_id):
+@app.route("/delete_book/", methods=["GET", "POST"])
+def delete_book():
+    book_id = request.form.get("delete_book")
     if request.method == "POST":
         mongo.db.books.remove({"_id": ObjectId(book_id)})
         flash("Book successfully deleted")
-    return render_template("delete_book.html")
+    return redirect("/nav_delete")
 
 
 @app.route("/contact")

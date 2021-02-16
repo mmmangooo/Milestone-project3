@@ -5,13 +5,15 @@
     <div class="container s12 m6 l2 white">
         <div class="row form-container">
 
-            <form class="col s12" method="POST" action="{{ url_for('delete_book', book_id=book._id) }} ">
+            <form class="col s12" method="POST" action="{{ url_for('delete_book') }} ">
                  <div class="row">
                     <div class="input-field col s12">
                          
                         <select id="delete_book" name="delete_book" class="validate" required>
+                              <option value="" disabled selected>Choose your option
+                            </option>
                           {% for book in books %} 
-                                <option value="{{ book.title }}">{{ book.title }}
+                                <option value="{{ book._id }}">{{ book.title }}
                                 </option>
                             
                            {% endfor %}

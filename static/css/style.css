@@ -83,6 +83,10 @@ nav ul li a {
     margin: 0 auto;
 }
 
+.carousel-slider {
+    width: 400px;
+}
+
  /* Credit for code creating indicators for switching slides: 
  https://codepen.io/Paco_Cervantes/pen/ZLxKpj?editors=1010 */
 
@@ -102,7 +106,7 @@ nav ul li a {
 
 .middle-indicator {
     position: absolute;
-    top: 25%;
+    bottom: 0;
 }
 
 .middle-indicator text {
@@ -124,10 +128,9 @@ a.middle-indicator-text {
     visibility: hidden;
 }
 
-#carousel-card {
-    margin: 0 2rem;
+.left {
+    margin-right: 2rem;
 }
-
 
 /*-------------------  Search */
 
