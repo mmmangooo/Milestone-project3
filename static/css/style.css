@@ -2,6 +2,15 @@ body {
     background-color: #fffef2d7;
 }
 
+/* CSS code for page container, div wrapping footer and footer with the purpose of keeping footer in place on all pages, 
+   regardless of the length of the content. Credit for this solution: 
+   https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
 /* --------------Headers and text elements */
 
 h1 {
@@ -64,18 +73,59 @@ nav ul li a {
 /* --------------Recently added books carousel */
 
 .carousel-container {
-    margin: 6rem auto;
+    margin: 4rem auto 0;
     width: 100%;
 }
 
 .carousel {
     width: 80%;
-    padding: 2rem;
+    height: 650px;
     margin: 0 auto;
 }
 
-.carousel-item {
-    padding: 0 0 2rem 0;
+ /* Credit for code creating indicators for switching slides: 
+ https://codepen.io/Paco_Cervantes/pen/ZLxKpj?editors=1010 */
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+}
+
+.middle-indicator {
+    position: absolute;
+    top: 25%;
+}
+
+.middle-indicator text {
+    font-size: 2.5rem;
+}
+
+a.middle-indicator-text {
+    color: white !important;
+}
+
+.content-indicator {
+    width: 8rem;
+    height: 8rem;
+    background: none;
+    border-radius: 7rem;  
+}
+
+.indicators {
+    visibility: hidden;
+}
+
+#carousel-card {
+    margin: 0 2rem;
 }
 
 
@@ -150,8 +200,13 @@ hr {
 
 /*--------------------Footer */
 
+.footer-container {
+    padding-bottom: 6rem;
+}
+
 footer {
-    position: relative;
+    position: absolute;
+    height: 6rem;
     bottom: 0;
     width: 100%;
     padding: 1rem;

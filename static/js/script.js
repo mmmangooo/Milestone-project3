@@ -3,8 +3,17 @@ $(document).ready(function() {
 $('.sidenav').sidenav();
 $('select').formSelect();
 $('tooltipped').tooltip();
-$('.carousel').carousel({
-    indicators: true,
+/* Start carousel */
+ // Credit for code creating indicators for switching slides: 
+ //https://codepen.io/Paco_Cervantes/pen/ZLxKpj?editors=1010 
+$('.carousel.carousel-slider').carousel({
+    indicators: false
+});
+
+$('.moveNextCarousel').click(function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('.carousel').carousel('next');
 });
 
 /* Creating upvoting/downvoting functionality */
@@ -26,8 +35,8 @@ $('#downVote').click(function(){
 
 function sendMail(contactForm) {
 emailjs.send('default_service', 'template_pzyq6ap', {
-        'form_name': contactForm.name.value,
-        'form_email': contactForm.emailaddress.value,
+        'from_name': contactForm.name.value,
+        'from_email': contactForm.emailaddress.value,
         'message': contactForm.message.value
 })
 

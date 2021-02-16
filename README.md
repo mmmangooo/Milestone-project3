@@ -185,6 +185,7 @@ On this page there is a form that the user can fill out to add a book to the pag
 * [Code for passing the date of adding a book to the database](https://kb.objectrocket.com/mongo-db/how-to-insert-a-document-into-a-mongodb-collection-using-python-367#add+the+date+and+time+in+python+when+you+insert+mongodb+documents)
 * [Code for querying the db for 3 most recently added books](https://api.mongodb.com/python/2.0/tutorial.html)
 * [Code for creating upvote/downvote functionality](https://codepen.io/hilaura13/pen/ztmpf)
+* [Code for keeping footer in place on every page, regardless of the size of the page content](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
 
 
 

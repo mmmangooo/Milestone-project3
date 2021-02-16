@@ -81,11 +81,12 @@ def edit_book(book_id):
     return render_template("edit_book.html")
 
 
-@app.route("/delete_book/<book_id>")
+@app.route("/delete_book/<book_id>", methods=["POST"])
 def delete_book(book_id):
-    book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
-    flash("Book successfully deleted")
-    return render_template("delete_book.html", book=book)
+    if request.method == "POST":
+        mongo.db.books.remove({"_id": ObjectId(book_id)})
+        flash("Book successfully deleted")
+    return render_template("delete_book.html")
 
 
 @app.route("/contact")
