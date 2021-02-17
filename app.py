@@ -32,13 +32,6 @@ def get_books():
     return render_template("index.html", books=books, new_books=new_books)
 
 
-@app.route("/nav_delete")
-def nav_delete():
-    books = mongo.db.books.find()
-    book = '_book_id'
-    return render_template("delete_book.html", books=books, book=book)
-
-
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
     # Adds instance of book to db:
@@ -72,7 +65,7 @@ def edit_book(book_id):
         mongo.db.books.update({"_id": ObjectId(book_id)}, submit)
         flash("You have successfully edited book information!")
     book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
-    return render_template("edit_book.html", book=book)
+    return render_template("index.html", book=book)
 
 
 @app.route("/delete_book/<book_id>")

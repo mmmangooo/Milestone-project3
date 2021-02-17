@@ -72,71 +72,12 @@ nav ul li a {
     text-align: center;
 }
 
-.carousel-wrapper {
+.recent-books-wrapper {
     padding: 2rem 0 6rem 0;
     margin: 0 0 4rem;
     background-color: #ee5d5dc5;
 }
 
-/* --------------Recently added books carousel */
-
-.carousel-container {
-    margin: 1rem auto;
-    width: 100%;
-}
-
-.carousel {
-   height: 42.5rem;
-}
-
-.carousel-slider {
-    width: 20rem;
-    margin: 0 auto;
-}
-
- /* Credit for code creating indicators for switching slides: 
- https://codepen.io/Paco_Cervantes/pen/ZLxKpj?editors=1010 */
-
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 3rem;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-}
-
-.middle-indicator text {
-    font-size: 2.5rem;
-}
-
-a.middle-indicator-text {
-    color: white !important;
-}
-
-.content-indicator {
-    width: 8rem;
-    height: 8rem;
-    background: none;
-    border-radius: 7rem;  
-}
-
-.indicators {
-    visibility: hidden;
-}
-
-.left {
-    float: none !important;
-}
-
-.right {
-    float: none !important;
-}
 
 /*-------------------  Search */
 
@@ -160,9 +101,6 @@ a.middle-indicator-text {
 }
 /* --------------Book cards */
 
-.book-row {
-    margin: 1.5rem;
-}
 
 .card {
     padding: 1rem 1rem 0.5rem;
