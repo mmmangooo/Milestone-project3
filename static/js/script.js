@@ -4,12 +4,11 @@ $('.sidenav').sidenav();
 $('select').formSelect();
 $('tooltipped').tooltip();
 /* Start carousel */
- // Credit for code creating indicators for switching slides: 
- //https://codepen.io/Paco_Cervantes/pen/ZLxKpj?editors=1010 
 $('.carousel.carousel-slider').carousel({
     indicators: false
 });
-
+// Credit for code creating indicators for switching slides: 
+ //https://codepen.io/Paco_Cervantes/pen/ZLxKpj?editors=1010 
 $('.moveNextCarousel').click(function(e) {
     e.preventDefault();
     e.stopPropagation();
@@ -27,8 +26,6 @@ $('#downVote').click(function(){
     counter--;
     $('#count').text(counter);
 });
-
-
 
 
 /* Contact form sending emails through emailjs on submission of form */
@@ -53,6 +50,5 @@ emailjs.send('default_service', 'template_pzyq6ap', {
 console.log('success')
 return false;
        
-
 }
 });

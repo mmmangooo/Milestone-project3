@@ -15,11 +15,19 @@ body {
 
 h1 {
     margin: 4rem 0 0;
-    font-size: 3.2rem;
+    font-size: 3rem;
+}
+
+h2, h3 {
+    font-size: 1.3rem;
 }
 
 h4 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 /*--------------------- Images */
@@ -42,7 +50,7 @@ h4 {
     width: 20%;
     position: relative;
     top: 2.5rem;
-    right: 5rem;
+    right: 0;
 }
 
 /* --------------Navigation bar */
@@ -65,7 +73,7 @@ nav ul li a {
 }
 
 .carousel-wrapper {
-    padding: 0.5rem;
+    padding: 2rem 0 6rem 0;
     margin: 0 0 4rem;
     background-color: #ee5d5dc5;
 }
@@ -73,18 +81,17 @@ nav ul li a {
 /* --------------Recently added books carousel */
 
 .carousel-container {
-    margin: 4rem auto 0;
+    margin: 1rem auto;
     width: 100%;
 }
 
 .carousel {
-    width: 80%;
-    height: 650px;
-    margin: 0 auto;
+   height: 42.5rem;
 }
 
 .carousel-slider {
-    width: 400px;
+    width: 20rem;
+    margin: 0 auto;
 }
 
  /* Credit for code creating indicators for switching slides: 
@@ -102,11 +109,6 @@ nav ul li a {
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
-}
-
-.middle-indicator {
-    position: absolute;
-    bottom: 0;
 }
 
 .middle-indicator text {
@@ -129,7 +131,11 @@ a.middle-indicator-text {
 }
 
 .left {
-    margin-right: 2rem;
+    float: none !important;
+}
+
+.right {
+    float: none !important;
 }
 
 /*-------------------  Search */
@@ -154,15 +160,19 @@ a.middle-indicator-text {
 }
 /* --------------Book cards */
 
+.book-row {
+    margin: 1.5rem;
+}
+
 .card {
-    padding: 1rem;
-    margin: 4rem 0 0;
+    padding: 1rem 1rem 0.5rem;
+    margin: 2rem 0 0;
     border-radius: 1rem;
     text-align: center;
 }
 
 .vote {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .vote-btn {
@@ -170,6 +180,12 @@ a.middle-indicator-text {
     border: none;
     background-color: #fff;
     color: #00695c;
+}
+
+.card-hr {
+    margin: 1.5rem auto 1.5rem;
+    border-top: 0.11rem solid #004d40;
+    width: 70%;
 }
 
 hr {
@@ -180,6 +196,7 @@ hr {
     margin-top: 8rem;
     margin-bottom: 6rem;
 }
+
 
 .icon-links p{
     text-decoration: none;
