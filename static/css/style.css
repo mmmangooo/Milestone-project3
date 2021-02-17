@@ -126,6 +126,11 @@ nav ul li a {
     width: 70%;
 }
 
+.modal-trigger {
+    background-color: transparent;
+    border-style: none;
+}
+
 hr {
     border-top: 0.15rem solid #004d40;
     border-bottom: none;

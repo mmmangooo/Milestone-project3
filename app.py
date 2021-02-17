@@ -28,7 +28,7 @@ def get_books():
     # Querying the db for the 3 most recently added books
     # Credit for this code: https://api.mongodb.com/python/2.0/tutorial.html
     new_books = mongo.db.books.find(
-        {"date_of_adding": {"$lt": datetime_now}}, limit=3).sort("title")
+        {"date_of_adding": {"$lt": datetime_now}}, limit=2).sort("title")
     return render_template("index.html", books=books, new_books=new_books)
 
 

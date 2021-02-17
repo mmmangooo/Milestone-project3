@@ -3,19 +3,9 @@ $(document).ready(function() {
 $('.sidenav').sidenav();
 $('select').formSelect();
 $('tooltipped').tooltip();
-/* Start carousel */
-$('.carousel.carousel-slider').carousel({
-    indicators: false
-});
-// Credit for code creating indicators for switching slides: 
- //https://codepen.io/Paco_Cervantes/pen/ZLxKpj?editors=1010 
-$('.moveNextCarousel').click(function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    $('.carousel').carousel('next');
-});
+$('.modal').modal();
 
-/* Creating upvoting/downvoting functionality */
+/* Creating upvoting/downvoting functionality on book cards*/
 // Credit for this code: https://codepen.io/hilaura13/pen/ztmpf
 let counter = 0;
 $('#upVote').click(function(){
