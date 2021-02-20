@@ -64,15 +64,16 @@ def edit_book(book_id):
         }
         mongo.db.books.update({"_id": ObjectId(book_id)}, submit)
         flash("You have successfully edited book information!")
+        return redirect(url_for("get_books"))
     book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
-    return render_template("index.html", book=book)
+    return render_template("edit_book.html", book=book)
 
 
 @app.route("/delete_book/<book_id>")
 def delete_book(book_id):
     mongo.db.books.remove({"_id": ObjectId(book_id)})
     flash("Book successfully deleted")
-    return render_template("index.html")
+    return redirect(url_for("get_books"))
 
 
 @app.route("/contact")

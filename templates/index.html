@@ -139,12 +139,12 @@
                                             </div>
                                             <div class="col s6">
 
-                                                <button class="modal-trigger" data-target="#modal1{{book._id}}">
+                                                <button class="btn modal-trigger" data-target="modal1{{book._id}}">
                                                     <i class="small material-icons teal-text text-darken-3">delete</i>
                                                     <p>Delete book</p>
                                                 </button>
                                                 <!-- Modal Structure -->
-                                                <div id="modal1{book._id}}" class="modal">
+                                                <div id="modal1{{book._id}}" class="modal">
                                                     <div class="modal-content">
                                                         <h4>Are you sure you want to delete this book?</h4>
                                                         <p>Deleting the book will remove it permanently.</p>
@@ -169,13 +169,19 @@
 
                             <div class="container center-align">
                                 <div class="row center-align">
-                                    <div class="col s6">
+                                    <div class="col s3">
                                         <a class="icon-links" href="{{ url_for('add_book') }}">
                                             <i class="medium material-icons teal-text text-darken-3">add_circle_outline</i>
                                             <p>Add book</p>
                                         </a>
                                     </div>
-                                    <div class="col s6">
+                                    <div class="col s3">
+                                        <a class="icon-links" href="{{ url_for('get_books') }}">
+                                            <i class="medium material-icons teal-text text-darken-3">home</i>
+                                            <p>Home</p>
+                                        </a>
+                                    </div>
+                                    <div class="col s3">
                                         <a class="icon-links" href="{{ url_for('contact') }}">
                                             <i class="medium material-icons teal-text text-darken-3">mail_outline</i>
                                             <p>Contact</p>

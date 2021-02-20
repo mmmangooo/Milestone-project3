@@ -129,6 +129,7 @@ nav ul li a {
 .modal-trigger {
     background-color: transparent;
     border-style: none;
+    text-transform: none;
 }
 
 hr {
