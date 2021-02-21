@@ -32,6 +32,16 @@ def get_books():
     return render_template("index.html", books=books, new_books=new_books)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    books = mongo.db.books.find({"$text": {"$search": query}})
+    datetime_now = datetime.now()
+    new_books = mongo.db.books.find(
+        {"date_of_adding": {"$lt": datetime_now}}, limit=2).sort("title")
+    return render_template("index.html", books=books, new_books=new_books)
+
+
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
     # Adds instance of book to db:

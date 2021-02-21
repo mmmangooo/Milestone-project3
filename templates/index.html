@@ -67,7 +67,7 @@
 
                 <div class="search-container white center-align">
 
-                    <form action="" method="POST">
+                    <form action="{{ url_for('search') }}" method="POST">
                         <div class="row">
                             <div class="col s4">
                                 <p class="red-text text-accent-2">Search for book</p>
@@ -84,87 +84,90 @@
                         </form>
 
                     </div>
+                    {% if books.count() > 0 %}
 
-                    <div class="row">
-                        {% for book in books %}
+                        <div class="row">
+                            {% for book in books %}
 
-                            <div class="col s12 m6 l4 xl3">
-                                <div class="card">
-                                    <h4 class="center-align teal-text text-darken-4">{{ book.title }}</h4>
-                                    <p class="teal-text text-darken-4 center-align">Author:
-                                        {{ book.author }}
-                                    </p>
-                                    <div class="rating center-align">
-                                        {% if book.rating == "5" %}
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                        {% elif book.rating == "4" %}
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                        {% elif book.rating == "3" %}
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                        {% elif book.rating == "2" %}
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                        {% else %}
-                                            <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
-                                        {% endif %}
-                                    </div>
-                                    <div class="vote">
-                                        <button class="vote-btn" id="upVote">
-                                            <i class="small material-icons">thumb_up</i>
-                                        </button>
-                                        <span id="count">0</span>
-                                        <button class="vote-btn" id="downVote">
-                                            <i class="small material-icons">thumb_down</i>
-                                        </button>
+                                <div class="col s12 m6 l4 xl3">
+                                    <div class="card">
+                                        <h4 class="center-align teal-text text-darken-4">{{ book.title }}</h4>
+                                        <p class="teal-text text-darken-4 center-align">Author:
+                                            {{ book.author }}
+                                        </p>
+                                        <div class="rating center-align">
+                                            {% if book.rating == "5" %}
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                            {% elif book.rating == "4" %}
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                            {% elif book.rating == "3" %}
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                            {% elif book.rating == "2" %}
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                            {% else %}
+                                                <img src="https://img.icons8.com/fluent/32/000000/star.png"/>
+                                            {% endif %}
+                                        </div>
+                                        <div class="vote">
+                                            <button class="vote-btn" id="upVote">
+                                                <i class="small material-icons">thumb_up</i>
+                                            </button>
+                                            <span id="count">0</span>
+                                            <button class="vote-btn" id="downVote">
+                                                <i class="small material-icons">thumb_down</i>
+                                            </button>
 
-                                    </div>
-                                    <p>
-                                        {{ book.description }}</p>
-                                    <hr class="card-hr">
-                                        <div class="row icon-links">
-                                            <div class="col s6">
-                                                <a href="{{ url_for('edit_book', book_id=book._id) }}">
-                                                    <i class="small material-icons teal-text text-darken-3">create</i>
-                                                    <p>Edit book</p>
-                                                </a>
-                                            </div>
-                                            <div class="col s6">
+                                        </div>
+                                        <p>
+                                            {{ book.description }}</p>
+                                        <hr class="card-hr">
+                                            <div class="row icon-links">
+                                                <div class="col s6">
+                                                    <a href="{{ url_for('edit_book', book_id=book._id) }}">
+                                                        <i class="small material-icons teal-text text-darken-3">create</i>
+                                                        <p>Edit book</p>
+                                                    </a>
+                                                </div>
+                                                <div class="col s6">
 
-                                                <button class="btn modal-trigger" data-target="modal1{{book._id}}">
-                                                    <i class="small material-icons teal-text text-darken-3">delete</i>
-                                                    <p>Delete book</p>
-                                                </button>
-                                                <!-- Modal Structure -->
-                                                <div id="modal1{{book._id}}" class="modal">
-                                                    <div class="modal-content">
-                                                        <h4>Are you sure you want to delete this book?</h4>
-                                                        <p>Deleting the book will remove it permanently.</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <a href="{{ url_for('delete_book', book_id=book._id) }}" class="modal-close waves-effect waves-green btn-flat">Yes</a>
-                                                        <a href="{{ url_for('get_books') }}" class="modal-close waves-effect waves-green btn-flat">No</a>
+                                                    <button class="btn modal-trigger" data-target="modal1{{ book._id }}">
+                                                        <i class="small material-icons teal-text text-darken-3">delete</i>
+                                                        <p>Delete book</p>
+                                                    </button>
+                                                    <!-- Modal Structure -->
+                                                    <div id="modal1{{ book._id }}" class="modal">
+                                                        <div class="modal-content">
+                                                            <h4>Are you sure you want to delete this book?</h4>
+                                                            <p>Deleting the book will remove it permanently.</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <a href="{{ url_for('delete_book', book_id=book._id) }}" class="modal-close waves-effect waves-green btn-flat">Yes</a>
+                                                            <a href="{{ url_for('get_books') }}" class="modal-close waves-effect waves-green btn-flat">No</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                            {% endfor %}
+                                {% endfor %}
 
-                        </div>
+                            </div>
+                            {% else %}
+                            <h4 class="center-align teal-text text-darken-4">No Results Found</h4>
+                        {% endif %}
 
 
-                       
                         <hr>
 
                             <div class="container center-align">
