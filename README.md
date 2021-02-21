@@ -6,7 +6,7 @@ my understanding of Python, micro-framework Flask and MongoDB for
 building the back-end functionality for a CRUD (Create, Read, Update
 Delete) website.
 
-A live version of the website can be viewed here.
+[A live version of the website can be viewed here](https://feminist-book-site.herokuapp.com/)
 
 (Image of the website)
 
@@ -16,7 +16,7 @@ The main purpose of this website is to provide a collection of feminist books
 to facilitate the interested reader in finding a book in this genre that he or 
 she wants to read - and by doing so also spreading this literature to more readers. 
 Through the functionality of adding, editing and deleting books, the site is meant to 
-be a living fora for the reader to share their thoughts and reflections on different books. 
+be a living fora for the reader to share book-tips and share their own thoughts about different books. 
 The possibility of sharing book-tips with others works as a motivator for reading and thus 
 learning and discovering by exploring new books. In this way, the site aims both to increase
 the reading of feminist literature and to build a sense of community around the reading.
@@ -133,7 +133,17 @@ Link to full sized wireframe images:
 
 * Color scheme:
 
-* Imagery:
+* Imagery: The purpose of the images on this site is to create an immediate positive emotional response associated to reading when the user
+  enters the site. The images are also chosen to bring about associations to femininity in the choice of colors of the glasses and the book,
+  and in the chosen gender of the reading person. This is made to amplify the impression in the user that this site is aimed primarily at 
+  women, and of course at feminists of other sexes than female. The image of the reading woman is chosen to give the feeling of concentrated 
+  stillness and being completely immersed in something that reading a book can bring. This image is shown on all screen sizes. On screen sizes
+  from 992px and up, the images of a pair of pink glasses and a book with the text "With books you can go places!" are also shown. The image
+  of the glasses is simply chosen to bring about an associaton with reading in general, and the image of the book is chosen to bring about
+  with the feeling of exploring and learning, seeing other worlds, that for many people is associated with reading. The imagery chosen on the
+  site is overall aimed at awakening the user's curiousness to find new books and their desire to read. 
+
+  bring about an 
 
 * Typography:
 
@@ -150,14 +160,45 @@ info.
 At the top of the index page is a header and a subheader that explains what this page is for, so that the user
 can quickly decide if this page provides the functionality that they are looking for.
 The index page contains the main content of the site, which is the books, and those are displayed on cards
-arranged in a simple and responsive grid system. The user can find books by scrolling through the cards, to ensure 
-an easy way to overview what books are present on the page. The user that knows which book or author they are looking for 
-can also use the search bar on the page to find that book or books by that author. Present on the index page is also
-a slider showing the three latest books that have been added to the site, so that the returning visitor can easily
-see what books have been added since they visited last time. 
+arranged in a simple and responsive grid system to make it easy for the user to get an overview of the books.  
+The user can find books by scrolling through the cards and exploring what books are there to be found. A user that 
+knows which book or author they are looking for can also use the search bar on the page to find that book, or books by that author. 
+Present on the index page is also a slider showing the three latest books that have been added to the site, so that the returning 
+visitor can easily see what books have been added since they visited last time. The purpose of all features on the index page is to
+make the site easy to use and thus facilitating for the user to find new books to read. At the bottom of the index page is also nav
+links in the shape of icons, providing easily accessible navigation back to the top of the page, to the add book page and to the 
+contact page, respectively. The purpose of providing icons for nav links is to make it easy for the user to immediately see these 
+navigation options and understand what they are for. 
 
 #### Add book page
-On this page there is a form that the user can fill out to add a book to the page.
+The add book page is accessed through the navigation bar at the top of the page or the nav icons at the bottom of the index page.
+The add book page contains a form for the user to fill out to add a new book to the site. The form provides fields for book title, author,
+rating and description of book. When the user fills out the form and clicks the submit button, they are taken back to the index page where
+a flash message is displayed, saying "You successfully added a book". 
+
+#### Edit book page
+On each of the cards displaying a book, there is an icon with a text underneath saying "Edit book". When the user clicks this icon link they
+are taken to a separate page with an edit form. The form is prefilled with the current information about the book that the user clicked the
+navigation icon on. At the top of the edit page is a header explaining that this page is for editing a book, and each input field has a label
+explaining which information about the book is contained in that field. The purpose of this is to make it easy for the user to understand how
+to use the form for editing a book, so that the user easily can share their own input on the book if they for information spot a spelling mistake
+on one of the books on the site. This facilitates user interactivity and thereby enforces the site's goal of creating motivation to read by 
+facilitating sharing input. 
+
+#### Delete book modal
+On each of the cards displaying a book, there is an icon with a text underneath saying "Delete book". When the user clicks this icon link 
+a modal pops up saying "Are you sure you want to delete this book?" and explaining to the user that deleting the book will remove it 
+permanently. The modal contains one button with the text "yes" and one with the text "no". Clicking the "yes"-button returns the user to 
+the index page where at the top a flash message is displayed, saying "The book was successfully deleted". Clicking the "no" button just returns
+the user to the index page.
+
+#### Contact page
+The contact page is accessed through the navigation bar at the top of the page or the nav icons at the bottom of the index page. The contact
+page contains a form where the user fills out their name, emailadress and the message they want to send. There is a header and a subheader
+present on the top of the site, explaining clearly that this is a contact form, and there are labels and placeholders on all fields in the 
+form explaining what information should be added there. This is made to make the form easy to understand and use for the user. On clicking 
+the send button, an email is sent through Emailjs' email service. After the send button is clicked, the user sees either the message "Your 
+mail has been successfully sent!" or "Your email was not sent, please try again". 
 
 
 
