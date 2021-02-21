@@ -83,22 +83,34 @@ nav ul li a {
 
 
 .search-container {
-    margin: 3rem auto 0;
+    margin: 3rem auto 2rem;
     padding: 0.5rem;
     border: 0.1rem solid #adaaa1de;
     border-radius: 1rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.2);
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
 }
 
-.search-container button {
-    margin: 1rem 0 0;
+.search-row {
+    margin-bottom: 0;
 }
 
 .search-container p {
-    margin: 1.6rem 0 0;
+    margin: 25% 0;
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+#query {
+    margin: 25% 0;
+}
+
+.query-btn {
+    margin: 25% 0;
+}
+
 /* --------------Book cards */
 
 
@@ -141,7 +153,6 @@ hr {
     margin-bottom: 6rem;
 }
 
-
 .icon-links p{
     text-decoration: none;
     color: #00695c;
@@ -161,6 +172,7 @@ hr {
 .input-field label {
     color: #686251;
 }
+
 
 /*--------------------Footer */
 
@@ -205,7 +217,7 @@ footer a {
         width: 60%;
     }
     .search-container {
-        width: 40%;
+        width: 30%;
     }
 }
 

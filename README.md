@@ -186,6 +186,7 @@ On this page there is a form that the user can fill out to add a book to the pag
 * [Code for querying the db for 3 most recently added books](https://api.mongodb.com/python/2.0/tutorial.html)
 * [Code for creating upvote/downvote functionality](https://codepen.io/hilaura13/pen/ztmpf)
 * [Code for keeping footer in place on every page, regardless of the size of the page content](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
+* [Code for navigation back to specifik part of page after executing search](https://stackoverflow.com/questions/35843675/link-to-a-specific-location-in-a-flask-template)
 
 
 
