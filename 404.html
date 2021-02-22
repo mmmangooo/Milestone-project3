@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This page provides the functionality of scrolling or searching to find books in the category
+                    of feminist literature, as well as the possibility to add, edit, upvote/downvote and delete books.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+       
+        
+        <title>404 error</title>
+    </head>
+
+<body>
+<main>
+    <h1>Page does not exist</h1>
+    <div class="row">
+          <div class="col s12 l6">
+                <img class="woman-reading" src="{{ url_for('static', filename='./images/woman-reading.png') }}" alt="Woman sitting with her legs crossed and reading a book"></div>
+        <div class="col s12 l6">
+            <p>The page you are looking for does not exist. Perhaps the link you clicked is broken, or there is a spelling mistake
+                in the address you typed in. Please check you spelling and try again!
+            </p>
+            <p>To go back to the starting page, click here: <a href="{{url_for('index.html') }}"></a> </p>
+        </div>
+    </div>
+      </main>
+</body>
+</html>
