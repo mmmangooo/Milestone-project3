@@ -144,6 +144,8 @@ nav ul li a {
     border: none;
     background-color: #fff;
     color: #00695c;
+    text-shadow: none;
+    cursor: pointer;
 }
 
 .card-hr {
@@ -210,13 +212,18 @@ footer {
     width: 100%;
     padding: 1rem;
     margin: 6rem 0 0 0;
-    background-color: #ee5d5dc5;
+    background-color: #d40353;
 }
 
 footer a {
     text-decoration: none;
     color: #fff;
 }
+
+footer p {
+    color: #fff;
+}
+
 
 /*---------------------Media queries */
 
