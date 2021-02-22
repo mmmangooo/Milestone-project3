@@ -46,9 +46,6 @@ p {
 
 .woman-reading {
     width: 30%;
-    position: relative;
-    top:4rem;
-    left: 4rem;
 }
 
 .book-image {
@@ -242,5 +239,10 @@ footer p {
     }
     .search-container {
         width: 30%;
+    }
+    .woman-reading {
+        position: relative;
+        top:4rem;
+        left: 4rem;
     }
 }
