@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?Antic+Slab&family=Poppins:wght@200;300;400&family=PT+Serif&display=swap');
+
 body {
     background-color: #fffef2d7;
 }
@@ -16,18 +18,28 @@ body {
 h1 {
     margin: 4rem 0 0;
     font-size: 3rem;
+    font-family: 'PT Serif', serif;
 }
 
-h2, h3 {
+h2 {
     font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 /*--------------------- Images */
@@ -154,6 +166,7 @@ hr {
     margin-top: 8rem;
     margin-bottom: 6rem;
 }
+
 
 .icon-links p{
     text-decoration: none;

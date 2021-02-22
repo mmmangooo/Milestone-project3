@@ -143,9 +143,13 @@ Link to full sized wireframe images:
   with the feeling of exploring and learning, seeing other worlds, that for many people is associated with reading. The imagery chosen on the
   site is overall aimed at awakening the user's curiousness to find new books and their desire to read. 
 
-  bring about an 
-
-* Typography:
+* Typography: The font 'PT Serif' is chosen for the H1 headers on the site. The reasoning behind this choice is that firstly, it is a serif font
+  which gives it a somewhat serious look and makes it associable to printed text and more precisely books. This font is used for the main headers on each
+  page so that the user's first association from the font, upon entering each page, is an association to printed material and books. The second reason for 
+  choosing this particular serif font is that it at the same time has rather rounded forms and is not too sharp, and this gives it a more modern and friendly
+  look which goes along well with the site's goal of motivating reading, by giving a sense of welcoming to the site. The font chosen for all other headings
+  and for text is Poppins. This font was chosen because it has a rounded and friendly design language and is easy to read, which also facilitates in giving
+  the site a friendly and welcoming sense to it. 
 
 
 ### Features
