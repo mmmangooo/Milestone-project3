@@ -36,21 +36,22 @@ p {
     width: 30%;
     position: relative;
     top:4rem;
+    left: 4rem;
 }
 
 .book-image {
-    display: none;
     width: 40%;
     position: relative;
-    top: 3rem;
+    top: 7rem;
+    right: 12rem;
 }
 
 .glasses-image {
-    display: none;
     width: 20%;
     position: relative;
-    top: 2.5rem;
-    right: 0;
+    top: 6.5rem;
+    right: 10rem;
+    z-index: 1;
 }
 
 /* --------------Navigation bar */
@@ -83,6 +84,7 @@ nav ul li a {
 
 
 .search-container {
+    width: 95%;
     margin: 3rem auto 2rem;
     padding: 0.5rem;
     border: 0.1rem solid #adaaa1de;
@@ -159,6 +161,14 @@ hr {
     font-weight: bold; 
 }
 
+.delete-btn {
+    cursor: pointer;
+    text-shadow: none;
+}
+
+.delete-icon {
+    margin: 0 0 0.4rem;
+}
 /*--------------------Forms*/
 
 .form-container {
@@ -207,12 +217,6 @@ footer a {
 }
 
 @media screen and (min-width: 992px) {
-    .book-image {
-        display: inline-block;
-    }
-    .glasses-image {
-        display: inline-block;
-    }
     .carousel-container {
         width: 60%;
     }
@@ -220,9 +224,4 @@ footer a {
         width: 30%;
     }
 }
-
-@media screen and (min-width: 1200px) {
-    .carousel-container {
-        width: 40%;
-    }
 }

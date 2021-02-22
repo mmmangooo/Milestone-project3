@@ -7,9 +7,9 @@
                 <h1 class="center-align teal-text text-darken-4">Feminist book site</h1>
                 <h2 class="center-align teal-text text-darken-4">Find your new favourite books here - and add books that you want others to read!</h2>
             </div>
-            <div class="col s12 l6">
+            <div class="col s12 l6 offset-l1">
                 <img class="woman-reading" src="{{ url_for('static', filename='./images/woman-reading.png') }}" alt="Woman sitting with her legs crossed and reading a book"></div>
-                <div class="col s6">
+                <div class="hide-on-med-and-down col l4">
                     <img class="glasses-image" src="{{ url_for('static', filename='./images/glasses.png') }}" alt="Pink glasses">
                         <img class="book-image" src="{{ url_for('static', filename='./images/books-image.png') }}" alt="Pink book with a cover saying 'With books, you can go places!', and some green leaves sticking out of it"></div>
 
@@ -23,7 +23,7 @@
                         {% for book in new_books %}
 
 
-                            <div class="col s12 m6 l4">
+                            <div class="col s12 m6 l6 xl4 offset-xl1">
                                 <div class="card">
                                     <h4 class="teal-text text-darken-4">{{ book.title }}</h4>
                                     <p class="grey-text text-darken-3">Author:
@@ -65,10 +65,11 @@
                 </div>
 
 
-                <div class="search-container white center-align">
+                <div
+                    class="search-container white center-align">
 
-                   <!-- Credit for navigation back to specifik part of page for search function:
-                     https://stackoverflow.com/questions/35843675/link-to-a-specific-location-in-a-flask-template -->
+                    <!-- Credit for navigation back to specifik part of page for search function:
+                                         https://stackoverflow.com/questions/35843675/link-to-a-specific-location-in-a-flask-template -->
 
                     <form action="{{ url_for('search', _anchor='book-cards') }}" method="POST">
                         <div class="row search-row">
@@ -89,9 +90,9 @@
                     </div>
                     {% if books.count() > 0 %}
 
-                        <div class="row" id="book-cards">
-                            {% for book in books %}
+                        <div class="row">
 
+                            {% for book in books %}
                                 <div class="col s12 m6 l4 xl3">
                                     <div class="card">
                                         <h4 class="center-align teal-text text-darken-4">{{ book.title }}</h4>
@@ -143,8 +144,8 @@
                                                 </div>
                                                 <div class="col s6">
 
-                                                    <button class="btn modal-trigger" data-target="modal1{{ book._id }}">
-                                                        <i class="small material-icons teal-text text-darken-3">delete</i>
+                                                    <button class="delete-btn modal-trigger" data-target="modal1{{ book._id }}">
+                                                        <i class="delete-icon small material-icons teal-text text-darken-3">delete</i>
                                                         <p>Delete book</p>
                                                     </button>
                                                     <!-- Modal Structure -->
@@ -166,6 +167,7 @@
                                 {% endfor %}
 
                             </div>
+
                         {% else %}
                             <h4 class="center-align teal-text text-darken-4">No Results Found</h4>
                         {% endif %}
