@@ -224,6 +224,8 @@ mail has been successfully sent!" or "Your email was not sent, please try again"
 
 * [Unicorn Revealer Tool](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
 
+* [WC3 Markup Validation Tool](https://validator.w3.org/) for validating HTML code
+
 
 ### Code
 
