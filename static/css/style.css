@@ -230,6 +230,19 @@ label {
 }
 
 
+/*---------------------Contact */
+
+#success-alert p {
+    color: green;
+    font-size: 1.5rem;
+}
+
+#error-alert p {
+    color: red;
+    font-size: 1.5rem;
+}
+
+
 /*--------------------Footer */
 
 

@@ -123,10 +123,10 @@ This project is the best way to help them achieve this because:
 ![Wireframe of 404 page in web browser](./readme-assets/readme-images/404-page-web.png)
 
 
-Link to full sized wireframe images:
 
 
-### Database design
+
+## Database design
 
 This database design includes a future intended functionality of offering users to register an individual user account.
 The user collection is not implemented in this project yet. The "Added_by" in Books collection is therefor not impplemented
@@ -190,7 +190,13 @@ An env.py file is used for storing details about database connection, and this f
   the site a friendly and welcoming sense to it. 
 
 
-### Features
+#### Differences between wireframes and implemented design
+
+* 
+
+## Features
+
+### Existing features
 
 Navigation bar and logo is present of every page on the site for easily accessible navigation.
 On smaller screens, the navigation bar is displayed as a hamburger menu, showing nav links when being
@@ -243,14 +249,45 @@ the send button, an email is sent through Emailjs' email service. After the send
 mail has been successfully sent!" or "Your email was not sent, please try again". 
 
 
+### Features left to implement
+
+* A functionality of registering as a user on the page and being able to login to your unique account is planned to be added in the future. 
+  With this functionality in place, only users registered and logged in to their accounts will be allowed to add, edit and delete books. 
+
+* When there is user register/login functionality in place, a discussion board or forum is planned to be added to the site to provide an opportunity
+  for registered users to discuss books directly with each other.
+
+
 
 ## Technologies used
 
 * This site is built with HMTL, CSS, JavaScript and Python languages
 
+* The following modules for Python were used in this project (can also be found in requirements.txt file):
+    
+    - click==7.1.2
+    - dnspython==2.1.0
+    - Flask==1.1.2
+    - Flask-PyMongo==2.3.0
+    - itsdangerous==1.1.0
+    - pymongo==3.11.3
+    - Werkzeug==1.0.1
+
 * [jQuery](https://jquery.com/) was used for simplifying the use of Javascript
 
-* [Materialize framework](https://materializecss.com/) was used for easy implementation of grid systems, styling, navbar and carousel
+* This site was developed in [GitPod cloudbased IDE](https://www.gitpod.io/)
+
+* [Git](https://git-scm.com/) was used for version control
+
+* [GitHub](https://github.com) is used for storing the code for this website
+
+* [Heroku](https://heroku.com) is used for deployment of the live website
+
+* [MongoDB](https://www.mongodb.com/3) was used for storing the document based collection of books 
+
+* [Balsmiq](https://balsamiq.com/) was used for creating the wireframes for this project
+
+* [Materialize framework](https://materializecss.com/) was used for easy implementation and responsiveness of grid systems, styling and navbar
 
 * [Picresize.com](https://picresize.com/) was used to resize images
 
@@ -258,20 +295,111 @@ mail has been successfully sent!" or "Your email was not sent, please try again"
 
 * [Favicon.io](https://favicon.io/) was used for converting logo image to favicon
 
-* [Unicorn Revealer Tool](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+* [Google Fonts](https://fonts.google.com/) is used for providing the fonts used on the site
 
-* [WC3 Markup Validation Tool](https://validator.w3.org/) for validating HTML code
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) was used for inspecting elements on the site to debug
+  positioning and grid issues and test responsiveness on different screen sizes
 
-* [Jigsaw CSS Validation Tool](https://jigsaw.w3.org/css-validator/)
+* [Unicorn Revealer Tool](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) was used 
+  for analyzing positioning and grid issues
+
+* [WC3 Markup Validation Tool](https://validator.w3.org/) was used for for validating HTML code
+
+* [Jigsaw CSS Validation Tool](https://jigsaw.w3.org/css-validator/) was used for validating CSS code
+
+
+## Testing
+
+Information about testing is provided in a separate file, [which can be viewed here](TESTING.md)
+
+
+## Deployment
+
+### Project Creation
+
+The creation of this project on GitHub follwed these steps:
+
+1. Navigate to [GitHub](https://github.com) and sign in on the page
+
+2. When signed in to the page My Repositories is shown on the left side of the screen, and on top is a green
+  button saying "New". Clicking this button leads to the page for creating a new repository
+
+3. On the page for creating a new repository, I chose the Code Institute Template from the options under "Repository templates"
+
+4. After entering a name for the project, click the green "Create Repository" button, which creates a repository hosting the
+  project on GitHub
+
+
+### Deployment to Heroku
+
+1. Navigate to [Heroku](https://heroku.com) and sign on the page
+
+2. When signed in, on the top right corner is a button saying "New". Clicking this button makes two options show - choose "Create app"
+
+3. Clicking the create app button leads to a new page, where I entered a name for the app and chose the region closest to my location
+  and then clicked "Create app"
+
+4. Click on the tab saying "Deploy" and select Github - Connect to Github
+
+5. In the prompt showing after this, enter the name for the Github repository and click search
+
+6. When the repository is found, click the "connect" button
+
+7. Click the tab saying "settings" and then click the button saying "Reveal config vars"
+
+8. Add these variables: 
+    - key: IP, value: 0.0.0.0
+    - key: PORT, value: 8080
+    - key: MONGODB_NAME, value: (name of the database)
+    - key: MONGO_URI, value: (the uri for the mongodb, which can be found at "clusters" - "connect" -"connect your application")
+    - key: SECRET_KEY, value: (customized secret key for configuration)
+
+9. Go to the tab saying "Deploy" again and scroll to the section "Automatic Deployment"
+10. Choose the bransch you want to deploy from and then click "Enable Automation Deploys"
+
+### Run project locally
+To run this project locally with connection to database, you will need to set up an env.py file and configure IP, PORT, MONGO_URI,
+MONGODB_NAME and SECRET_KEY. These are not provided openly for this project for security reasons. To recreate the project with database
+connection, you will therefore need to set up your own collection on MongoDB and connect that to your local project.
+
+1. Navigate to GitHub repository for this project
+
+2. Click the button on the top right saying "Code" and from the dropdown menu, choose if you want to download he project in a zip file,
+   or copy the Git URL
+
+3. Open the IDE you want to work in and either:
+    - open a terminal window in the directory you choose and type in the "git clone" command followed by the copied URL
+    or for zip file:
+    - open the downloaded files from your IDE
+
+4. Install the required packages for the projects by entering the following command in the shell: pip install -r requirements.txt
+
+### Fork project
+
+1. Navigate to GitHub repository for this project
+
+2. Click the button on the top right saying "Fork"
+
+3. A duplicate of the project is now created in your Github repository
 
 
 ## Credits
+
+### Media
+
+* Images in the first section on page are from [Canva](https://www.canva.com/)
+
+* Icons are from [Materialize](https://materializecss.com/) and [Icons8](https://icons8.com/)
+
+### Content
+
+* All textual content on the site is written by Isabelle Ängsås
+
 
 ### Code
 
 * [Code for passing the date of adding a book to the database](https://kb.objectrocket.com/mongo-db/how-to-insert-a-document-into-a-mongodb-collection-using-python-367#add+the+date+and+time+in+python+when+you+insert+mongodb+documents)
 * [Code for querying the db for 3 most recently added books](https://api.mongodb.com/python/2.0/tutorial.html)
-* [Code for creating upvote/downvote functionality](https://codepen.io/hilaura13/pen/ztmpf)
 * [Code for keeping footer in place on every page, regardless of the size of the page content](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
 * [Code for navigation back to specifik part of page after executing search](https://stackoverflow.com/questions/35843675/link-to-a-specific-location-in-a-flask-template)
 

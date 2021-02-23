@@ -6,6 +6,22 @@
 
 The site has been manually tested on the funcitonality of the following:
 
+* Navigation links: 
+   - Links in navigation bar 
+   - Links in navigation bar logo 
+   - Links to edit and delete book on book cards 
+   - Navigation link icons at the bottom of index page
+
+* Contact form sending emails and displaying a feedback message confirming that the email has been sent
+
+* Add book form: 
+   - Input fields requirement functioning
+   - Book being added to database upon submission of form
+   - Sending back to index page and displaying flash message after form submission
+
+* Edit book form:
+
+
 
 
 ## User stories Testing
