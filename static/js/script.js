@@ -19,6 +19,8 @@ $(this).siblings('span').text(counter);
 });
 
 
+
+});
 /* Contact form sending emails through emailjs on submission of form */
 
 function sendMail(contactForm) {
@@ -32,14 +34,13 @@ emailjs.send('default_service', 'template_pzyq6ap', {
     .then(
         function(response) {
             console.log('success', response);
-            $('#success-alert').style.display='block';
+            $('#success-alert').show();
     }, function(error) {
             console.log('failed', error);
-            $('#error-alert').style.display='block';
+            $('#error-alert').show();
     });
   
 console.log('success')
 return false;
        
 }
-});
