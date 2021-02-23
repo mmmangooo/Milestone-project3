@@ -4,7 +4,7 @@ body {
     background-color: #fffef2d7;
 }
 
-/* CSS code for page container, div wrapping footer and footer with the purpose of keeping footer in place on all pages, 
+/* CSS code for page container, div wrapping content on page and footer with the purpose of keeping footer in place on all pages, 
    regardless of the length of the content. Credit for this solution: 
    https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
 
@@ -19,6 +19,7 @@ h1 {
     margin: 4rem 0 0;
     font-size: 3rem;
     font-family: 'PT Serif', serif;
+    letter-spacing: 0.04rem;
 }
 
 h2 {
@@ -71,11 +72,19 @@ p {
 }
 
 nav ul li a {
-    color: #ff5252;
+    color: #E60045;
     font-weight: bold;
 }
 
+.sidenav-trigger {
+    color: #E60045;
+}
+
 /* -------------- Wrapper containers */
+
+.content-wrap {
+    padding-bottom: 6rem;  
+}
 
 .intro-container {
     padding: 2rem 0 8rem;
@@ -85,12 +94,11 @@ nav ul li a {
 .recent-books-wrapper {
     padding: 2rem 0 6rem 0;
     margin: 0 0 4rem;
-    background-color: #ee5d5dc5;
+    background-color: #ff6666b0;
 }
 
 
 /*-------------------  Search */
-
 
 .search-container {
     width: 95%;
@@ -108,10 +116,11 @@ nav ul li a {
     margin-bottom: 0;
 }
 
-.search-container p {
+.search-heading {
     margin: 25% 0;
     font-weight: bold;
     font-size: 1.2rem;
+    color: #E60045;
 }
 
 #query {
@@ -120,9 +129,10 @@ nav ul li a {
 
 .query-btn {
     margin: 25% 0;
+    background-color: #E60045;
 }
 
-/* --------------Book cards */
+/* -----------------------Book cards */
 
 
 .card {
@@ -166,7 +176,6 @@ hr {
     margin-bottom: 6rem;
 }
 
-
 .icon-links p{
     text-decoration: none;
     color: #00695c;
@@ -181,6 +190,7 @@ hr {
 .delete-icon {
     margin: 0 0 0.4rem;
 }
+
 /*--------------------Forms*/
 
 .form-container {
@@ -191,16 +201,17 @@ hr {
     box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2);
 }
 
-.input-field label {
-    color: #686251;
+label {
+    color: #444138 !important;
+}
+
+.submit-btn {
+    background-color: #E60045;
 }
 
 
 /*--------------------Footer */
 
-.footer-container {
-    padding-bottom: 6rem;
-}
 
 footer {
     position: absolute;
@@ -209,7 +220,8 @@ footer {
     width: 100%;
     padding: 1rem;
     margin: 6rem 0 0 0;
-    background-color: #d40353;
+    background-color: #E60045;
+    
 }
 
 footer a {
@@ -242,7 +254,7 @@ footer p {
     }
     .woman-reading {
         position: relative;
-        top:4rem;
+        top: 6rem;
         left: 4rem;
     }
 }

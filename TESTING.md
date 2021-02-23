@@ -17,6 +17,20 @@ The site has been manually tested on the funcitonality of the following:
 
 ### Usability and performance testing
 
+The site has been evaluated using Lighthouse Tool, with the following result:
+
+#### Index page:
+
+#### Add book page:
+
+#### Contact page:
+
+#### Edit book form:
+
+#### Delete book modal:
+
+
+
 
 
 ## Known bugs
