@@ -128,10 +128,48 @@ Link to full sized wireframe images:
 
 ### Database design
 
+This database design includes a future intended functionality of offering users to register an individual user account.
+The user collection is not implemented in this project yet. The "Added_by" in Books collection is therefor not impplemented
+yet either.
+
+Examples of MongoDB object formats:
+
+Collection: books
+ { _id: unique-value,
+   title: "Feminist Book",
+   author: "Jane Doe",
+   description: "This is a book about some very interesting stuff.",
+   rating: 5,
+   date_of_adding: 2021-02-20T15:05:55.502+00:00,
+   (added_by: session[user])
+ }
+
+Collection: user
+{ _id: unique_value,
+  username: "Admin",
+  password: "12&4HLG65!12",
+  name: "Mary Poppins"
+}
+
+#### Security
+
+An env.py file is used for storing details about database connection, and this file is not uploaded to GitHub. 
+
 
 ### Design
 
-* Color scheme:
+* Color scheme: The background color on the site is an Ivory white (#FFFEF2) , chosen to achieve a very light background but that is still softer on the 
+  eye than a purely white background. The ivory nuance also has a warmth that makes it go well together with the other colors on the site.
+  The soft pink color Light Coral (FF7474) was chosen to create a warm and feminine feeling and to pick up on the color from the book in the image
+  of the woman reading. This was made to ensure that the associations awokened in the viewer from the first section on the page would continue
+  when scrolling down to the next section (recently added books). The brighter pink color Amaranth (#E60045) was chosen to be invigorating and to
+  create a sensation of modernness, curiousness and also associate to femininity. This color is used on elements that needs to be immideately visible for
+  the user to be easily accessible, such as navbar links and submit buttons. The heading elements use a teal color (#004D40) - except for heading in search box, 
+  that uses Amaranth for easthatical reasons as to go along with the submit button. The teal green picks up from the color on the leaves from the book 
+  image and provides a good contrast for reading the header text, while giving a warmer impression than for example a dark grey hue would. For p elements,
+  dark grey color (#444138) is used to provide good contrast for easy readability and to be easy on the eye while reading longer paragraphs of text.
+
+  ![Image of color scheme](./static/images/color-pallette.png)
 
 * Imagery: The purpose of the images on this site is to create an immediate positive emotional response associated to reading when the user
   enters the site. The images are also chosen to bring about associations to femininity in the choice of colors of the glasses and the book,

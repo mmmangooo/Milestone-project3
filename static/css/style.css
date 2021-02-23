@@ -96,7 +96,14 @@ nav ul li a {
     margin: 0 0 4rem;
     background-color: #ff7474b0;
 }
-
+/*
+.book-wrapper {
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+}
+*/
 
 /*-------------------  Search */
 
@@ -124,7 +131,7 @@ nav ul li a {
 }
 
 #query {
-    margin: 25% 0;
+    margin: 15% 0 0;
 }
 
 .query-btn {
@@ -132,8 +139,8 @@ nav ul li a {
     background-color: #E60045;
 }
 
-/* -----------------------Book cards */
 
+/* -----------------------Book cards */
 
 .card {
     padding: 1rem 1rem 0.5rem;
@@ -150,7 +157,7 @@ nav ul li a {
     display: inline;
     border: none;
     background-color: #fff;
-    color: #00695c;
+    color: #004d40;
     text-shadow: none;
     cursor: pointer;
 }
@@ -178,7 +185,7 @@ hr {
 
 .icon-links p{
     text-decoration: none;
-    color: #00695c;
+    color: #004d40;
     font-weight: bold; 
 }
 
@@ -203,6 +210,7 @@ hr {
 
 label {
     color: #444138 !important;
+    text-align: left;;
 }
 
 .submit-btn {
