@@ -6,18 +6,18 @@ $('tooltipped').tooltip();
 $('.modal').modal();
 
 
-
 /* Creating upvoting/downvoting functionality on book cards*/
-// Credit for this code: https://codepen.io/hilaura13/pen/ztmpf
-let counter = 0;
-$('#upVote').click(function(){
+var counter = 0;
+$('.upVote').click(function() {
     counter++;
-$('#count').text(counter);
+    $(this).siblings('span').text(counter);
 });
-$('#downVote').click(function(){
+
+$('.downVote').click(function() {
     counter--;
-$('#count').text(counter);
+$(this).siblings('span').text(counter);
 });
+
 
 /* Contact form sending emails through emailjs on submission of form */
 

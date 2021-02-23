@@ -169,7 +169,7 @@ An env.py file is used for storing details about database connection, and this f
   image and provides a good contrast for reading the header text, while giving a warmer impression than for example a dark grey hue would. For p elements,
   dark grey color (#444138) is used to provide good contrast for easy readability and to be easy on the eye while reading longer paragraphs of text.
 
-  ![Image of color scheme](./static/images/color-pallette.png)
+  ![Image of color scheme](./static/images/color-palette.png)
 
 * Imagery: The purpose of the images on this site is to create an immediate positive emotional response associated to reading when the user
   enters the site. The images are also chosen to bring about associations to femininity in the choice of colors of the glasses and the book,
@@ -244,9 +244,7 @@ mail has been successfully sent!" or "Your email was not sent, please try again"
 
 
 
-## Credits
-
-### Technologies used
+## Technologies used
 
 * This site is built with HMTL, CSS, JavaScript and Python languages
 
@@ -264,6 +262,10 @@ mail has been successfully sent!" or "Your email was not sent, please try again"
 
 * [WC3 Markup Validation Tool](https://validator.w3.org/) for validating HTML code
 
+* [Jigsaw CSS Validation Tool](https://jigsaw.w3.org/css-validator/)
+
+
+## Credits
 
 ### Code
 

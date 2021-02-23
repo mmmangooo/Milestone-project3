@@ -64,6 +64,16 @@ This could not be solved since adding a label to this materialize element overwr
 
 ## Solved bugs
 
+* The upvote/downvote function on the book cards had a bug where no matter on which card the Upvote or Downvote button were clicked, the count always
+  changed on the first book card only. When the HTML code was first run in the validator, it threw an error saying that the id's "upVote" and "downVote"
+  where not unique. This led me to acknowledge that since the book card with the id's of "upVote" and "downVote" where present for every book card loaded
+  via the template route, the id's where indeed present several times on the page. This meant that the voting function being called when clicking an "upVote"
+  or "downVote" function on any of the cards on the page always sent back the count to the first element with the id "count" on the page, and this was the reason 
+  why only the count on the first book card changed when clicking an "upvote" or "downvote" button on any card. The bug was solved by removing the id's from "upvote"
+  and "downvote" buttons an giving them classes instead (solving the issue of html validator throwing error for id's not being unique), and using the 'this' keyword
+  and traversing in the jquery code for sending back the count to the sibling span element of the button being clicked. The solution was found with assistance from
+  tutor support.   
+
 * The nav link to the contact page was not working on some screen sizes, where clicking the link directed back to the index page. A quick look with the 
   [Unicorn Revealer Tool](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) showed that the a tag 
   containg the logo was overlapping the contact link on some screen sizes. This problem was solved by setting a smaller width to the a tag with the logo.

@@ -147,6 +147,10 @@ nav ul li a {
     margin: 2rem 0 0;
     border-radius: 1rem;
     text-align: center;
+    overflow-y: hidden;
+    max-height: 40rem;
+    overflow-x: scroll;
+
 }
 
 .vote {
@@ -196,6 +200,14 @@ hr {
 
 .delete-icon {
     margin: 0 0 0.4rem;
+}
+
+.delete-txt {
+    display: inline-block;
+    margin: 1.05rem 0 0;
+    color: #004d40;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*--------------------Forms*/
