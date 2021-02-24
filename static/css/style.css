@@ -53,19 +53,12 @@ p {
 }
 
 .book-image {
-    width: 40%;
+    width: 35%;
     position: relative;
-    top: 7rem;
-    right: 12rem;
+    top: 6rem;
+    right: 8rem;
 }
 
-.glasses-image {
-    width: 20%;
-    position: relative;
-    top: 6.5rem;
-    right: 10rem;
-    z-index: 1;
-}
 
 /* --------------Navigation bar */
 
@@ -291,8 +284,8 @@ footer p {
    
     .woman-reading {
         position: relative;
-        top: 6rem;
-        left: 4rem;
+        top: 4rem;
+        left: 9rem;
     }
     
     .search-container {

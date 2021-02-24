@@ -12,8 +12,6 @@ The site has been manually tested on the functionality of the following:
    - Links to edit and delete book on book cards 
    - Navigation link icons at the bottom of index page
 
-* Contact form sending emails and displaying a feedback message confirming that the email has been sent
-
 * Add book form: 
    - Input fields requirement functioning
    - Book being added to database upon submission of form
@@ -30,9 +28,61 @@ The site has been manually tested on the functionality of the following:
    - Sending back to index page and displaying flash message after clicking "Yes" button
    - Sending back to index page without flash message and with book not being deleted when clicked "No" button in pop up modal
 
+* Search field:
+   - The functionality of entering a search string and pressing search returning a result
+   - If the book or author searched for is present on the site, the book card or cards are displayed below the search field
+   - If the book or author does not exist on the site a message is displayed below the search field saying "No results found"
+
+* Contact form sending emails and displaying a feedback message confirming that the email has been sent
+
+* Responsivity on different devices has been tested using Chrome Developer Tools and on different devices (mostly different models of
+  iPhone) with the help from family and friends.
 
 
 ## User stories Testing
+
+  1. As a first time visitor, I want to quickly get an overview of what this site is for so that I can decide 
+     if the site provides the services I am looking for
+
+     * When the user enters the site, they see a header and a subheader explaining the purpose of the site. The first section of
+       the site also shows images and colors chosen to make the user associate to reading and to feminism, which facilitates the 
+       users understanding of the site's purpose. 
+
+  ![Image of first section on index page](./static/images/index-first.png)
+
+  2.  As a user, I want to be able to search for a specific book or books by a specific author on the site
+
+      * There is a search field present on the site, where the user can enter a book title or author and search for them on the site
+
+  ![Image of search section on index page](./static/images/search.png)
+
+  3.  As a user, I want to be able to easily view the books on the site so that I can find an interesting book
+
+      * There is a secton on the page displaying all books in a grid that is easy to overview to see what books are presented on the site
+
+   ![Image of all books section on index page](./static/images/grid.png)
+
+  4. As a returning visitor, I want to see what new books have been added to the site so that I can easily know if there has been any interesting 
+     additions since my last visit
+
+     * On the index page, just below the first section is a section for recently added books, where the user can immediately see the two books that
+       have been addest latest to the site
+
+    ![Image of recently added books section on index page](./static/images/recent.png) 
+
+  5. As a user, I want to be able to upvote or downvote books on the site so that I can easily share my opinion on books
+
+    * On each book there is an upvote button and a downvote button that the user can click and that triggers a count up or down that is being showed
+      between the buttons
+
+    ![Image of vote buttons on book card](./static/images/vote.png) 
+
+  6. As a user, I want to be able to add books I have read so that I can share tips and thoughts with others
+
+    * There is an add book form accessible from navigation bar at the top pf the page and from navigation links at the bottom of the page. The user can
+      fill out the form and submit it to add a book to the site
+
+   ![Image of add book form](./static/images/add-book.png) 
 
 
 ## Further Testing
@@ -64,16 +114,16 @@ The site has been evaluated using Lighthouse Tool, with the following result:
 
 #### Index page:
 
-![Lighthouse results for index page](.static/images/lighthouse-index.png)
+![Lighthouse results for index page](./static/images/lighthouse-index.png)
 
 #### Add book page:
-![Lighthouse results for add book page](.static/images/lighthouse-add_book.png)
+![Lighthouse results for add book page](./static/images/lighthouse-add_book.png)
 
 #### Contact page:
-![Lighthouse results for contact page](.static/images/lighthouse-contact.png)
+![Lighthouse results for contact page](./static/images/lighthouse-contact.png)
 
 #### Edit book page:
-![Lighthouse results for edit book page](.static/images/lighthouse-edit_book.png)
+![Lighthouse results for edit book page](./static/images/lighthouse-edit_book.png)
 
 
 #### Comments on results:
@@ -121,4 +171,4 @@ This could not be solved since adding a label to this materialize element overwr
   and a fixed height was set from medium devices and up. The reason for using max-height on small devices is that it worked better with the one-column grid used there.
   This is what the grid looks like after this fix:
 
-  [Image of grid after fixing issue](.static/images/grid-fixed)
+  [Image of grid after fixing issue](./static/images/grid-fixed)

@@ -7,10 +7,9 @@
                 <h1 class="center-align teal-text text-darken-4">Feminist book site</h1>
                 <h2 class="center-align teal-text text-darken-4">Find your new favourite books here - and add books that you want others to read!</h2>
             </div>
-            <div class="col s12 l6 offset-l1">
+            <div class="col s12 l6">
                 <img class="woman-reading" src="{{ url_for('static', filename='./images/woman-reading.png') }}" alt="Woman sitting with her legs crossed and reading a book"></div>
-                <div class="hide-on-med-and-down col l4">
-                    <img class="glasses-image" src="{{ url_for('static', filename='./images/glasses.png') }}" alt="Pink glasses">
+                <div class="hide-on-med-and-down col l6">
                         <img class="book-image" src="{{ url_for('static', filename='./images/books-image.png') }}" alt="Pink book with a cover saying 'With books, you can go places!', and some green leaves sticking out of it"></div>
 
                     </div>
@@ -92,9 +91,9 @@
                     </div>
 
                     <div class="book-wrapper">
-                        <h3 class="teal-text text-darken-4 center-align">All books</h3>
+                        
                         {% if books.count() > 0 %}
-
+<h3 class="teal-text text-darken-4 center-align">All books</h3>
                             <div class="row book-row">
                                 {% for book in books %}
 
@@ -186,7 +185,7 @@
                                 <div class="container center-align">
                                     <div class="row">
                                         <div class="col s4">
-                                            <a class="icon-links" href="#intro-container">
+                                            <a class="icon-links" href="{{url_for('get_books')}}">
                                                 <img class="icon-img" src="https://img.icons8.com/ios/50/00695c/home--v1.png" alt="Icon of house"/>
                                                 <p>Home</p>
                                             </a>

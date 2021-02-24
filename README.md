@@ -172,12 +172,11 @@ An env.py file is used for storing details about database connection, and this f
   ![Image of color scheme](./static/images/color-palette.png)
 
 * Imagery: The purpose of the images on this site is to create an immediate positive emotional response associated to reading when the user
-  enters the site. The images are also chosen to bring about associations to femininity in the choice of colors of the glasses and the book,
+  enters the site. The images are also chosen to bring about associations to femininity in the choice of color of the book,
   and in the chosen gender of the reading person. This is made to amplify the impression in the user that this site is aimed primarily at 
   women, and of course at feminists of other sexes than female. The image of the reading woman is chosen to give the feeling of concentrated 
   stillness and being completely immersed in something that reading a book can bring. This image is shown on all screen sizes. On screen sizes
-  from 992px and up, the images of a pair of pink glasses and a book with the text "With books you can go places!" are also shown. The image
-  of the glasses is simply chosen to bring about an associaton with reading in general, and the image of the book is chosen to bring about
+  from 992px and up, an image of a book with the text "With books you can go places!" is also shown. The image of the book is chosen to bring about
   with the feeling of exploring and learning, seeing other worlds, that for many people is associated with reading. The imagery chosen on the
   site is overall aimed at awakening the user's curiousness to find new books and their desire to read. 
 
