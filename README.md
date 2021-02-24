@@ -148,8 +148,11 @@ Collection: user
 { _id: unique_value,
   username: "Admin",
   password: "12&4HLG65!12",
-  name: "Mary Poppins"
+  name: "Mary Poppins",
+  date_joined: 2021-02-20T15:05:55.502+00:00
 }
+
+![Image of database schema](./readme-assets/readme-images/db-scheme.png)
 
 #### Security
 
@@ -169,7 +172,7 @@ An env.py file is used for storing details about database connection, and this f
   image and provides a good contrast for reading the header text, while giving a warmer impression than for example a dark grey hue would. For p elements,
   dark grey color (#444138) is used to provide good contrast for easy readability and to be easy on the eye while reading longer paragraphs of text.
 
-  ![Image of color scheme](./static/images/color-palette.png)
+  ![Image of color scheme](./readme-assets/readme-images/color-palette.png)
 
 * Imagery: The purpose of the images on this site is to create an immediate positive emotional response associated to reading when the user
   enters the site. The images are also chosen to bring about associations to femininity in the choice of color of the book,
@@ -248,12 +251,13 @@ the send button, an email is sent through Emailjs' email service. After the send
 mail has been successfully sent!" or "Your email was not sent, please try again". 
 
 
-### Features left to implement
+### Possible future features
 
-* A functionality of registering as a user on the page and being able to login to your unique account is planned to be added in the future. 
-  With this functionality in place, only users registered and logged in to their accounts will be allowed to add, edit and delete books. 
+* A functionality of registering as a user on the page and being able to login to your unique account was not part of the requirements for this 
+  project, but is a feature that can be added in the future. 
+  With this functionality in place, only users registered and logged in to their accounts would be allowed to add, edit and delete books. 
 
-* When there is user register/login functionality in place, a discussion board or forum is planned to be added to the site to provide an opportunity
+* With user register/login functionality in place, a discussion board or forum can be added to the site to provide an opportunity
   for registered users to discuss books directly with each other.
 
 
@@ -264,13 +268,13 @@ mail has been successfully sent!" or "Your email was not sent, please try again"
 
 * The following modules for Python were used in this project (can also be found in requirements.txt file):
     
-    - click==7.1.2
-    - dnspython==2.1.0
-    - Flask==1.1.2
-    - Flask-PyMongo==2.3.0
-    - itsdangerous==1.1.0
-    - pymongo==3.11.3
-    - Werkzeug==1.0.1
+    - click=7.1.2
+    - dnspython=2.1.0
+    - Flask=1.1.2
+    - Flask-PyMongo=2.3.0
+    - itsdangerous=1.1.0
+    - pymongo=3.11.3
+    - Werkzeug=1.0.1
 
 * [jQuery](https://jquery.com/) was used for simplifying the use of Javascript
 

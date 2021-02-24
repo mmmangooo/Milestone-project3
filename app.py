@@ -53,7 +53,7 @@ def add_book():
             "title": request.form.get("title"),
             "author": request.form.get("author"),
             "description": request.form.get("description"),
-            "rating": request.form.get("rating"),
+            "rating": request.form["rating"],
             "date_of_adding": datetime.now()
         }
         mongo.db.books.insert_one(book)
@@ -70,7 +70,7 @@ def edit_book(book_id):
             "title": request.form.get("title"),
             "author": request.form.get("author"),
             "description": request.form.get("description"),
-            "rating": request.form.get("rating")
+            "rating": request.form["rating"]
         }
         mongo.db.books.update({"_id": ObjectId(book_id)}, submit)
         flash("You have successfully edited book information!")

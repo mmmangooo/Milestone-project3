@@ -131,10 +131,6 @@ nav ul li a {
 
 /* -----------------------Book cards */
 
-.card-wrapper {
-    max-height: 46.5rem;
-}
-
 .card {
     padding: 1rem 1rem 0.2rem;
     border-radius: 1rem;
@@ -213,6 +209,16 @@ label {
     text-align: left;;
 }
 
+.form-rate-text {
+    color: #444138;
+    font-size: 0.8rem;
+    margin-left: 0.75rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, sans-serif;
+    transition: .2s opacity ease-out, .2s color ease-out;
+    line-height: 1.5;
+    text-align: initial;
+}
+
 .submit-btn {
     background-color: #E60045;
 }
@@ -261,16 +267,6 @@ footer p {
     .card-wrapper {
         max-height: 55rem;
     }
-}
-
-@media screen and (min-width: 600px) {
-    .search-container {
-        width: 60%;
-    }
-    .card-wrapper {
-    padding: 2rem 0;
-}
-    
 }
 
 @media screen and (min-width: 767px) {

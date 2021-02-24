@@ -2,7 +2,7 @@
 
 
 
-## Testing
+## Manual testing
 
 The site has been manually tested on the functionality of the following:
 
@@ -48,19 +48,19 @@ The site has been manually tested on the functionality of the following:
        the site also shows images and colors chosen to make the user associate to reading and to feminism, which facilitates the 
        users understanding of the site's purpose. 
 
-  ![Image of first section on index page](./static/images/index-first.png)
+  ![Image of first section on index page](./readme-assets/readme-images/index-first.png)
 
   2.  As a user, I want to be able to search for a specific book or books by a specific author on the site
 
       * There is a search field present on the site, where the user can enter a book title or author and search for them on the site
 
-  ![Image of search section on index page](./static/images/search.png)
+  ![Image of search section on index page](../readme-assets/readme-images/search.png)
 
   3.  As a user, I want to be able to easily view the books on the site so that I can find an interesting book
 
       * There is a secton on the page displaying all books in a grid that is easy to overview to see what books are presented on the site
 
-   ![Image of all books section on index page](./static/images/grid.png)
+   ![Image of all books section on index page](./readme-assets/readme-images/grid.png)
 
   4. As a returning visitor, I want to see what new books have been added to the site so that I can easily know if there has been any interesting 
      additions since my last visit
@@ -68,21 +68,21 @@ The site has been manually tested on the functionality of the following:
      * On the index page, just below the first section is a section for recently added books, where the user can immediately see the two books that
        have been addest latest to the site
 
-    ![Image of recently added books section on index page](./static/images/recent.png) 
+    ![Image of recently added books section on index page](./readme-assets/readme-images/recent.png) 
 
   5. As a user, I want to be able to upvote or downvote books on the site so that I can easily share my opinion on books
 
     * On each book there is an upvote button and a downvote button that the user can click and that triggers a count up or down that is being showed
       between the buttons
 
-    ![Image of vote buttons on book card](./static/images/vote.png) 
+    ![Image of vote buttons on book card](./readme-assets/readme-images/vote.png) 
 
   6. As a user, I want to be able to add books I have read so that I can share tips and thoughts with others
 
     * There is an add book form accessible from navigation bar at the top pf the page and from navigation links at the bottom of the page. The user can
       fill out the form and submit it to add a book to the site
 
-   ![Image of add book form](./static/images/add-book.png) 
+   ![Image of add book form](./readme-assets/readme-images/add-book.png) 
 
 
 ## Further Testing
@@ -91,8 +91,8 @@ The site has been manually tested on the functionality of the following:
 
 HTML code has been validated using the [WC3 Markup Validation Tool](https://validator.w3.org/) with one error stemming from the jinja templating:
 
-![Image of HTML validator result](./static/images/html-validator.png)
-![Image of HTML validator result for section](./static/images/html-validator-section.png)
+![Image of HTML validator result](./readme-assets/readme-images/html-validator.png)
+![Image of HTML validator result for section](./readme-assets/readme-images/html-validator-section.png)
 
 #### Comment:
 This error is thrown because there is no flash message showing on the page, and therefor the template for flash messages is currently empty - leading to lack of
@@ -110,20 +110,20 @@ CSS code has been validated using the [Jigsaw Validator Tool](https://jigsaw.w3.
 
 The site has been evaluated using Lighthouse Tool, with the following result:
 
-![Jigsaw CSS Validator result](./static/images/jigsaw-result.png)
+![Jigsaw CSS Validator result](./readme-assets/readme-images/jigsaw-result.png)
 
 #### Index page:
 
-![Lighthouse results for index page](./static/images/lighthouse-index.png)
+![Lighthouse results for index page](./readme-assets/readme-images/ighthouse-index.png)
 
 #### Add book page:
-![Lighthouse results for add book page](./static/images/lighthouse-add_book.png)
+![Lighthouse results for add book page](./readme-assets/readme-images/lighthouse-add_book.png)
 
 #### Contact page:
-![Lighthouse results for contact page](./static/images/lighthouse-contact.png)
+![Lighthouse results for contact page](./readme-assets/readme-images/lighthouse-contact.png)
 
 #### Edit book page:
-![Lighthouse results for edit book page](./static/images/lighthouse-edit_book.png)
+![Lighthouse results for edit book page](./readme-assets/readme-images/lighthouse-edit_book.png)
 
 
 #### Comments on results:
@@ -134,9 +134,11 @@ This could not be solved since adding a label to this materialize element overwr
 
 ## Known bugs
 
-
+* During testing I found that the edit form was not picking up the value for rating, so the rating field was unfilled in the edit form. 
 
 ## Solved bugs
+
+
 
 * The upvote/downvote function on the book cards had a bug where no matter on which card the Upvote or Downvote button were clicked, the count always
   changed on the first book card only. When the HTML code was first run in the validator, it threw an error saying that the id's "upVote" and "downVote"
@@ -163,12 +165,11 @@ This could not be solved since adding a label to this materialize element overwr
 * On some screen sizes, the book card grid had an issue where the cards don't fit on the second line and there for overflow into the end of lione two and on to
   line three. See image below:
 
-  [Image of the issue](./static/images/grid-issue.png)
+  [Image of the issue](./readme-assets/readme-images/grid-issue.png)
 
   This issue was caused by the book cards not being equal in height, which led to some of them taking up more place vertically and therefor pushing away the content 
   on the line below. This could be fixed with setting a fixed maximum height on the cards, but at the expense of either cutting off the content or using a scroll bar
-  on the cards with longer content. To solve this, another div was wrapped around the card div, and a fixed max-height was set to this wrapper div on small devices
-  and a fixed height was set from medium devices and up. The reason for using max-height on small devices is that it worked better with the one-column grid used there.
+  on the cards with longer content. To solve this, another div was wrapped around the card div, and a fixed height was set to this wrapper div from medium devices and up. 
   This is what the grid looks like after this fix:
 
-  [Image of grid after fixing issue](./static/images/grid-fixed)
+  [Image of grid after fixing issue](./readme-assets/readme-images/grid-fixed.png)
