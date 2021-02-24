@@ -4,7 +4,7 @@
 
 ## Testing
 
-The site has been manually tested on the funcitonality of the following:
+The site has been manually tested on the functionality of the following:
 
 * Navigation links: 
    - Links in navigation bar 
@@ -20,7 +20,15 @@ The site has been manually tested on the funcitonality of the following:
    - Sending back to index page and displaying flash message after form submission
 
 * Edit book form:
+   - Info of the correct book being shown prefilled in the edit field 
+   - Book being edited in the database upon submission of form
+   - Sending back to index page and displaying flash message after form submission
 
+* Delete book functionality:
+   - Popup modal showing when delete button is being clicked - displaying message "Are you sure you want to delete this book?"
+   - The correct book being deleted from the database when "Yes" button is clicked in the pop up modal
+   - Sending back to index page and displaying flash message after clicking "Yes" button
+   - Sending back to index page without flash message and with book not being deleted when clicked "No" button in pop up modal
 
 
 
@@ -102,4 +110,15 @@ This could not be solved since adding a label to this materialize element overwr
   specific book_id value to input since the page needed to load all books in the db. This problem was solved by creating two separate routes for navigation
   to the edit_book site and the delete_book site respectively, and retrieving all books from the db for the user to choose from. 
 
+* On some screen sizes, the book card grid had an issue where the cards don't fit on the second line and there for overflow into the end of lione two and on to
+  line three. See image below:
 
+  [Image of the issue](./static/images/grid-issue.png)
+
+  This issue was caused by the book cards not being equal in height, which led to some of them taking up more place vertically and therefor pushing away the content 
+  on the line below. This could be fixed with setting a fixed maximum height on the cards, but at the expense of either cutting off the content or using a scroll bar
+  on the cards with longer content. To solve this, another div was wrapped around the card div, and a fixed max-height was set to this wrapper div on small devices
+  and a fixed height was set from medium devices and up. The reason for using max-height on small devices is that it worked better with the one-column grid used there.
+  This is what the grid looks like after this fix:
+
+  [Image of grid after fixing issue](.static/images/grid-fixed)

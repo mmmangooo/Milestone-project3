@@ -30,11 +30,13 @@ h2 {
 h3 {
     font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
+    margin: 1rem 0 2rem;
 }
 
 h4 {
     font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 p {
@@ -47,6 +49,7 @@ p {
 
 .woman-reading {
     width: 30%;
+    margin: 2rem 0 0;
 }
 
 .book-image {
@@ -67,7 +70,7 @@ p {
 /* --------------Navigation bar */
 
 .nav-logo {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     width: 4rem;
 }
 
@@ -96,20 +99,13 @@ nav ul li a {
     margin: 0 0 4rem;
     background-color: #ff7474b0;
 }
-/*
-.book-wrapper {
-    display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  row-gap: 0.5rem;
-  column-gap: 0.5rem;
-}
-*/
+
 
 /*-------------------  Search */
 
 .search-container {
     width: 95%;
-    margin: 3rem auto 2rem;
+    margin: 3rem auto 6rem;
     padding: 0.5rem;
     border: 0.1rem solid #adaaa1de;
     border-radius: 1rem;
@@ -142,15 +138,14 @@ nav ul li a {
 
 /* -----------------------Book cards */
 
+.card-wrapper {
+    max-height: 46.5rem;
+}
+
 .card {
-    padding: 1rem 1rem 0.5rem;
-    margin: 2rem 0 0;
+    padding: 1rem 1rem 0.2rem;
     border-radius: 1rem;
     text-align: center;
-    overflow-y: hidden;
-    max-height: 40rem;
-    overflow-x: scroll;
-
 }
 
 .vote {
@@ -269,25 +264,47 @@ footer p {
 
 /*---------------------Media queries */
 
-@media screen and (min-width: 768px) {
-    .carousel-container {
-        width: 80%;
-    }
-    .search-container {
-        width: 60%;
+@media screen and (max-width: 281px) {
+    .card-wrapper {
+        max-height: 55rem;
     }
 }
 
-@media screen and (min-width: 992px) {
-    .carousel-container {
+@media screen and (min-width: 600px) {
+    .search-container {
         width: 60%;
     }
-    .search-container {
-        width: 30%;
-    }
+    .card-wrapper {
+    padding: 2rem 0;
+}
+    
+}
+
+@media screen and (min-width: 767px) {
+    .card-wrapper {
+    height: 45rem;
+    padding: 0;
+} 
+}
+
+@media screen and (min-width: 992px) {
+   
     .woman-reading {
         position: relative;
         top: 6rem;
         left: 4rem;
     }
+    
+    .search-container {
+        width: 30%;
+    }
+     .card-wrapper {
+    height: 46rem;
+}
+}
+
+@media screen and (min-width: 1200px) {
+ .card-wrapper {
+    height: 44rem;
+}
 }
