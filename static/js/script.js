@@ -20,7 +20,6 @@ $(this).siblings('span').text(counter);
 
 
 
-});
 /* Contact form sending emails through emailjs on submission of form */
 
 function sendMail(contactForm) {
@@ -45,3 +44,5 @@ console.log('success')
 return false;
        
 }
+
+});

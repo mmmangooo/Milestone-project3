@@ -54,11 +54,11 @@ The site has been manually tested on the functionality of the following:
 
       * There is a search field present on the site, where the user can enter a book title or author and search for them on the site
 
-  ![Image of search section on index page](../readme-assets/readme-images/search.png)
+  ![Image of search section on index page](./readme-assets/readme-images/search2.png)
 
   3.  As a user, I want to be able to easily view the books on the site so that I can find an interesting book
 
-      * There is a secton on the page displaying all books in a grid that is easy to overview to see what books are presented on the site
+      * There is a section on the page displaying all books in a grid that is easy to overview to see what books are presented on the site
 
    ![Image of all books section on index page](./readme-assets/readme-images/grid.png)
 
@@ -75,7 +75,7 @@ The site has been manually tested on the functionality of the following:
     * On each book there is an upvote button and a downvote button that the user can click and that triggers a count up or down that is being showed
       between the buttons
 
-    ![Image of vote buttons on book card](./readme-assets/readme-images/vote.png) 
+    ![Image of vote buttons on book card](./readme-assets/readme-images/vote2.png) 
 
   6. As a user, I want to be able to add books I have read so that I can share tips and thoughts with others
 
@@ -165,11 +165,11 @@ This could not be solved since adding a label to this materialize element overwr
 * On some screen sizes, the book card grid had an issue where the cards don't fit on the second line and there for overflow into the end of lione two and on to
   line three. See image below:
 
-  [Image of the issue](./readme-assets/readme-images/grid-issue.png)
+  ![Image of the issue](./readme-assets/readme-images/grid-issue.png)
 
   This issue was caused by the book cards not being equal in height, which led to some of them taking up more place vertically and therefor pushing away the content 
   on the line below. This could be fixed with setting a fixed maximum height on the cards, but at the expense of either cutting off the content or using a scroll bar
   on the cards with longer content. To solve this, another div was wrapped around the card div, and a fixed height was set to this wrapper div from medium devices and up. 
   This is what the grid looks like after this fix:
 
-  [Image of grid after fixing issue](./readme-assets/readme-images/grid-fixed.png)
+  ![Image of grid after fixing issue](./readme-assets/readme-images/grid-fixed.png)

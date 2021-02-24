@@ -8,7 +8,7 @@ Delete) website.
 
 [A live version of the website can be viewed here](https://feminist-book-site.herokuapp.com/)
 
-(Image of the website)
+![Image of website on different devices](./readme-assets/readme-images/amiresponsive.png)
 
 
 
@@ -67,7 +67,7 @@ This project is the best way to help them achieve this because:
   1. As a first time visitor, I want to quickly get an overview of what this site is for so that I can decide 
      if the site provides the services I am looking for
 
-![Wireframe of index page description on mobile](./readme-assets/readme-images/site-description.png)
+![Wireframe of index page description on mobile](./readme-assets/readme-images/site-description-mobile.png)
 
   2. As a user, I want to be able to search for a specific book or books by a specific author on the site
 
