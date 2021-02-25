@@ -18,7 +18,7 @@ $('.downVote').click(function() {
 $(this).siblings('span').text(counter);
 });
 
-
+});
 
 /* Contact form sending emails through emailjs on submission of form */
 
@@ -31,17 +31,16 @@ emailjs.send('default_service', 'template_pzyq6ap', {
     
     // Creates a response when the user sends the form, informing user if sending was successful or not 
     .then(
-        
         function(response) {
             console.log('success', response);
             $('#success-alert').show();
-    }, function(error) {
+    },  function(error) {
             console.log('failed', error);
             $('#error-alert').show();
     });
-  
+    
+$('#contactForm')[0].reset();        
+        
 return false;
        
 }
-
-});

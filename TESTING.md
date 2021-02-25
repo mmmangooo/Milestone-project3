@@ -68,21 +68,21 @@ The site has been manually tested on the functionality of the following:
      * On the index page, just below the first section is a section for recently added books, where the user can immediately see the two books that
        have been addest latest to the site
 
-    ![Image of recently added books section on index page](./readme-assets/readme-images/recent.png) 
+![Image of recently added books section on index page](./readme-assets/readme-images/recent.png) 
 
   5. As a user, I want to be able to upvote or downvote books on the site so that I can easily share my opinion on books
 
     * On each book there is an upvote button and a downvote button that the user can click and that triggers a count up or down that is being showed
       between the buttons
 
-    ![Image of vote buttons on book card](./readme-assets/readme-images/vote2.png) 
+![Image of vote buttons on book card](./readme-assets/readme-images/vote2.png) 
 
   6. As a user, I want to be able to add books I have read so that I can share tips and thoughts with others
 
     * There is an add book form accessible from navigation bar at the top pf the page and from navigation links at the bottom of the page. The user can
       fill out the form and submit it to add a book to the site
 
-   ![Image of add book form](./readme-assets/readme-images/add-book.png) 
+![Image of add book form](./readme-assets/readme-images/add-book.png) 
 
  7. As a user, I want to be able to edit books so that I can correct any mistakes or add more information in the description of the book
    
@@ -90,7 +90,7 @@ The site has been manually tested on the functionality of the following:
       book is prefilled in the form and the user can just edit the information they wish to and then submit the form to change any information about the book and 
       save it to the database.
 
-    ![Image of edit book form](./readme-assets/readme-images/edit-book.png) 
+![Image of edit book form](./readme-assets/readme-images/edit-book.png) 
 
  8. As a user, I want to be able to delete books so that I can remove any books that I believe is not in the right genre for this site
 
@@ -98,9 +98,9 @@ The site has been manually tested on the functionality of the following:
       with a question if the user really wants to delete the book. By clicking yes, the book is deleted in the database. This way the user can easily delete books, and
       the pop up modal makes sure that a user does not delete a book by mistake.
 
-    ![Image of delete book button](./readme-assets/readme-images/delete-btn.png) 
+![Image of delete book button](./readme-assets/readme-images/delete-btn.png) 
     
-    ![Image of delete book modal](./readme-assets/readme-images/delete-modal.png) 
+![Image of delete book modal](./readme-assets/readme-images/delete-modal.png) 
 
 
   9. As a user, I want to be able to contact the site owner so that I can report errors on the site or suggest changes or additions to the site
@@ -108,14 +108,14 @@ The site has been manually tested on the functionality of the following:
     * Contact page is easily accessed from both the navigation menu at the top of the page and navigation links at the bottom of index page. The user fills in the contact 
       form, sends it and gets an immediate feedback message confirming that the email was sent, or that something went wrong.
 
-    ![Image of contact form](./readme-assets/readme-images/contact2.png)  
+![Image of contact form](./readme-assets/readme-images/contact2.png)  
 
 
   10. As a user, I want to be able to navigate back to the main site if I end up on a page that doesnt exist, or if a link is broken
 
     * If a link doesnt work or the page doesnt exist, the user is taken to a customized 404 error page that contains a link for navigation back to index page.
 
-  ![Image of 404-page](./readme-assets/readme-images/404-page.png) 
+![Image of 404-page](./readme-assets/readme-images/404-page.png) 
 
 ## Further Testing
 
@@ -123,12 +123,12 @@ The site has been manually tested on the functionality of the following:
 
 HTML code has been validated using the [WC3 Markup Validation Tool](https://validator.w3.org/) with no errors:
 
-![Image of HTML validator result](./readme-assets/readme-images/html-validator.png)
+![Image of HTML validator result](./readme-assets/readme-images/html-validation.png)
 
 
 CSS code has been validated using the [Jigsaw Validator Tool](https://jigsaw.w3.org/css-validator/) with no errors:
 
-![Image of CSS validator result](./readme-assets/readme-images/jigsaw.png)
+![Image of CSS validator result](./readme-assets/readme-images/jigsaw-result.png)
 
 
 JavaScript code has been validated using [JSHint](https://jshint.com/) with no errors except for warnings about unused variables, due to these
@@ -148,7 +148,7 @@ The site has been evaluated using Lighthouse Tool, with the following result:
 
 #### Index page:
 
-![Lighthouse results for index page](./readme-assets/readme-images/ighthouse-index.png)
+![Lighthouse results for index page](./readme-assets/readme-images/lighthouse-index.png)
 
 #### Add book page:
 ![Lighthouse results for add book page](./readme-assets/readme-images/lighthouse-add_book.png)
