@@ -40,7 +40,6 @@ emailjs.send('default_service', 'template_pzyq6ap', {
             $('#error-alert').show();
     });
   
-console.log('success')
 return false;
        
 }

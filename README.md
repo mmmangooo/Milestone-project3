@@ -112,7 +112,7 @@ This project is the best way to help them achieve this because:
 
 ![Wireframe of delete book web page](./readme-assets/readme-images/delete-book-web.png)
 
-  9. As a user, I want to be able to contact the site owner to report errors on the site or suggest changes or additions to the site
+  9. As a user, I want to be able to contact the site owner so that I can report errors on the site or suggest changes or additions to the site
 
 ![Wireframe of contact modal](./readme-assets/readme-images/contact.png)
 
@@ -309,6 +309,8 @@ mail has been successfully sent!" or "Your email was not sent, please try again"
 * [WC3 Markup Validation Tool](https://validator.w3.org/) was used for for validating HTML code
 
 * [Jigsaw CSS Validation Tool](https://jigsaw.w3.org/css-validator/) was used for validating CSS code
+
+* JavaScript code has been validated using [JSHint](https://jshint.com/)
 
 
 ## Testing

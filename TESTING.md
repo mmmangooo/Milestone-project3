@@ -84,6 +84,38 @@ The site has been manually tested on the functionality of the following:
 
    ![Image of add book form](./readme-assets/readme-images/add-book.png) 
 
+ 7. As a user, I want to be able to edit books so that I can correct any mistakes or add more information in the description of the book
+   
+    * By clicking the edit button on the card for the book that the user wants to edit, the user is taken to a page with an edit form. The information for that
+      book is prefilled in the form and the user can just edit the information they wish to and then submit the form to change any information about the book and 
+      save it to the database.
+
+    ![Image of edit book form](./readme-assets/readme-images/edit-book.png) 
+
+ 8. As a user, I want to be able to delete books so that I can remove any books that I believe is not in the right genre for this site
+
+    * On each book card there is a delete button that the user can click if they wish to delete that particular book. Upon clicking the delete button a modal pops up 
+      with a question if the user really wants to delete the book. By clicking yes, the book is deleted in the database. This way the user can easily delete books, and
+      the pop up modal makes sure that a user does not delete a book by mistake.
+
+    ![Image of delete book button](./readme-assets/readme-images/delete-btn.png) 
+    
+    ![Image of delete book modal](./readme-assets/readme-images/delete-modal.png) 
+
+
+  9. As a user, I want to be able to contact the site owner so that I can report errors on the site or suggest changes or additions to the site
+
+    * Contact page is easily accessed from both the navigation menu at the top of the page and navigation links at the bottom of index page. The user fills in the contact 
+      form, sends it and gets an immediate feedback message confirming that the email was sent, or that something went wrong.
+
+    ![Image of contact form](./readme-assets/readme-images/contact2.png)  
+
+
+  10. As a user, I want to be able to navigate back to the main site if I end up on a page that doesnt exist, or if a link is broken
+
+    * If a link doesnt work or the page doesnt exist, the user is taken to a customized 404 error page that contains a link for navigation back to index page.
+
+  ![Image of 404-page](./readme-assets/readme-images/404-page.png) 
 
 ## Further Testing
 
@@ -94,7 +126,15 @@ HTML code has been validated using the [WC3 Markup Validation Tool](https://vali
 ![Image of HTML validator result](./readme-assets/readme-images/html-validator.png)
 
 
-CSS code has been validated using the [Jigsaw Validator Tool](https://jigsaw.w3.org/css-validator/)
+CSS code has been validated using the [Jigsaw Validator Tool](https://jigsaw.w3.org/css-validator/) with no errors:
+
+![Image of CSS validator result](./readme-assets/readme-images/jigsaw.png)
+
+
+JavaScript code has been validated using [JSHint](https://jshint.com/) with no errors except for warnings about unused variables, due to these
+being sent through EmailJS API:
+
+![Image of JSHint validation result](./readme-assets/readme-images/jshint.png)
 
 
 
