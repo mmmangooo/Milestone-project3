@@ -89,15 +89,9 @@ The site has been manually tested on the functionality of the following:
 
 ### Validation
 
-HTML code has been validated using the [WC3 Markup Validation Tool](https://validator.w3.org/) with one error stemming from the jinja templating:
+HTML code has been validated using the [WC3 Markup Validation Tool](https://validator.w3.org/) with no errors:
 
 ![Image of HTML validator result](./readme-assets/readme-images/html-validator.png)
-![Image of HTML validator result for section](./readme-assets/readme-images/html-validator-section.png)
-
-#### Comment:
-This error is thrown because there is no flash message showing on the page, and therefor the template for flash messages is currently empty - leading to lack of
-heading in the section. The HTML has been validated using the code from deployed page (by right-clicking the page and choosing the option 'show page source'),
-because in the deployed version the templates are filled and therefor not throwing errors stemming from empty templates, such as '!Doctype missing' for example.
 
 
 CSS code has been validated using the [Jigsaw Validator Tool](https://jigsaw.w3.org/css-validator/)
@@ -132,13 +126,12 @@ The lower results on accessibility for add book page and edit book page is due t
 This could not be solved since adding a label to this materialize element overwrote the label for the option element in the html form.
 
 
-## Known bugs
-
-* During testing I found that the edit form was not picking up the value for rating, so the rating field was unfilled in the edit form. 
-
 ## Solved bugs
 
-
+* On the first attempt to validate the HTML, the validator threw an error for section lacking heading in the code for flash messages. This was due to the fact 
+  that the flash messages block was wrapped in section tags, so that when no flash message was sent to the page there was still section tags on the page and these
+  were empty. The problem was solved by moving the section tags inside the flash messages block so that when no flash message is showing, there are no section tags
+  for flash messages on the page either.
 
 * The upvote/downvote function on the book cards had a bug where no matter on which card the Upvote or Downvote button were clicked, the count always
   changed on the first book card only. When the HTML code was first run in the validator, it threw an error saying that the id's "upVote" and "downVote"

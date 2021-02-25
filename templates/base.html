@@ -52,18 +52,20 @@
                     </nav>
                 </header>
 
-                <section>
+            
                     <!--Display flash messages-->
                     {% with messages = get_flashed_messages() %}
                     {% if messages %}
                         {% for message in messages %}
+                         <section>
                             <div class="row flashes">
                                 <h3 class="teal-text center-align">{{ message }}</h3>
                             </div>
+                            </section>
                         {% endfor %}
                     {% endif %}
                     {% endwith %}
-                </section>
+                
 
                 {% block content %}
                     <main></main>
