@@ -250,6 +250,14 @@ label {
     text-align: initial;
 }
 
+.rating-nr {
+    margin-right: 0.5rem;
+}
+
+[type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
+    padding-left: 2rem;
+}
+
 .submit-btn {
     background-color: #E60045;
 }
@@ -335,9 +343,14 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
-    .recent-card {
-        height: 28rem;
+   
+    .card {
+        height: 41rem;
     }
+     .recent-card {
+        height: 29rem;
+    }
+
  .card-wrapper {
     height: 44rem;
 }

@@ -24,40 +24,40 @@
                             <div class="input-field col s12">
                                 <label for="description">Book description</label>
                                 <textarea placeholder="Decribe the book" id="description" name="description" class="materialize-textarea validate" minlength="5" maxlength="500" required>
-                                   {{- book.description  -}}
+                                    {{- book.description  -}}
                                 </textarea>
 
                             </div>
                         </div>
-                       <div class="row">
-                           
-                           
-                           <p class="form-rate-text">Rate the book:</p>
-                        
-                             {% for i in range(1,6) %}
-                             {% if book.rating == i|string %}
-                        
-                            <div class="col s1">
-
-                                <label for="{{ i }}">
-                                    <input name="rating" id="{{ i }}" type="radio" value="{{ i }}" checked/>
-                                    <span>{{ i }}</span>
-                                </label>
-                            </div>
-                            {% else %}
-                              
-                            <div class="col s1">
-                                <label for="{{ i}}">
-                                    <input name="rating" id="{{ i }}" type="radio" value="{{ i }}"/>
-                                    <span>{{ i }}</span>
-                                </label>
-                            </div>
-                            
-                            {% endif %}
-                          
-                            {% endfor %}
-                         
+                        <div class="row">
+                            <p class="form-rate-text">Rate the book:</p>
                         </div>
+                        <div class="row">
+
+                            {% for i in range(1,6) %}
+                                {% if book.rating == i|string %}
+
+                                    <div class="col s2 m1">
+
+                                        <label for="{{ i }}">
+                                            <input name="rating" id="{{ i }}" type="radio" value="{{ i }}" checked/>
+                                            <span class="rating-nr">{{ i }}</span>
+                                        </label>
+                                    </div>
+                                {% else %}
+
+                                    <div class="col s2 m1">
+                                        <label for="{{ i }}">
+                                            <input name="rating" id="{{ i }}" type="radio" value="{{ i }}"/>
+                                            <span class="rating-nr">{{ i }}</span>
+                                        </label>
+                                    </div>
+
+                                {% endif %}
+
+                            {% endfor %}
+                        </div>
+
 
                         <div class="row center-align">
                             <button class="btn submit-btn" type="submit" name="action">Submit
