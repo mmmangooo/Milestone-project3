@@ -17,14 +17,14 @@
 
             <div class="recent-books-wrapper">
 
-                <h3 class="teal-text text-darken-4 center-align">Recently added books:</h3>
-                <div class="container book-wrapper">
+                <h3 class="teal-text text-darken-4 center-align recent-header">Recently added books:</h3>
+                <div class="container">
                     <div class="row">
 
                         {% for book in new_books %}
 
-                            <div class="col s12 m6 l4 offset-l1">
-                                <div class="card">
+                            <div class="col s12 m6">
+                                <div class="card recent-card">
                                     <h4 class="teal-text text-darken-4">{{ book.title }}</h4>
                                     <p class="grey-text text-darken-3">Author:
                                         {{ book.author }}

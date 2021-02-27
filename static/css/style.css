@@ -108,9 +108,19 @@ nav ul li a {
 }
 
 .recent-books-wrapper {
-    padding: 2rem 0 6rem 0;
+    padding: 2rem 0 5rem 0;
     margin: 0 0 4rem;
     background-color: #ff7474b0;
+}
+
+/*-------------------- Recently added books */
+
+.recent-header {
+    margin: 1.5rem 0 3rem;
+}
+
+.recent-card {
+    max-height: 50rem;
 }
 
 
@@ -295,11 +305,17 @@ footer p {
     height: 48rem;
     padding: 0;
 } 
+ .recent-card {
+        height: 45rem;
+    }
 }
 
 @media screen and (min-width: 767px) {
     .card-wrapper {
         height: 44rem;
+    }
+    .recent-card {
+        height: 36rem;
     }
 }
 
@@ -310,7 +326,6 @@ footer p {
         top: 4rem;
         left: 9rem;
     }
-    
     .search-container {
         width: 30%;
     }
@@ -320,6 +335,9 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
+    .recent-card {
+        height: 28rem;
+    }
  .card-wrapper {
     height: 44rem;
 }
