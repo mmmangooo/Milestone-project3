@@ -82,7 +82,7 @@ The site has been manually tested on the functionality of the following:
     * There is an add book form accessible from navigation bar at the top pf the page and from navigation links at the bottom of the page. The user can
       fill out the form and submit it to add a book to the site
 
-![Image of add book form](./readme-assets/readme-images/add-book.png) 
+![Image of add book form](./readme-assets/readme-images/add_book.png) 
 
  7. As a user, I want to be able to edit books so that I can correct any mistakes or add more information in the description of the book
    
@@ -90,7 +90,7 @@ The site has been manually tested on the functionality of the following:
       book is prefilled in the form and the user can just edit the information they wish to and then submit the form to change any information about the book and 
       save it to the database.
 
-![Image of edit book form](./readme-assets/readme-images/edit-book.png) 
+![Image of edit book form](./readme-assets/readme-images/edit_book.png) 
 
  8. As a user, I want to be able to delete books so that I can remove any books that I believe is not in the right genre for this site
 

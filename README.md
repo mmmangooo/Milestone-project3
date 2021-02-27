@@ -161,9 +161,9 @@ An env.py file is used for storing details about database connection, and this f
 
 ### Design
 
-* Color scheme: The background color on the site is an Ivory white (#FFFEF2) , chosen to achieve a very light background but that is still softer on the 
+* Color scheme: The background color on the site is "baby powder white" (#fdfcf5d7) , chosen to achieve a very light background but that is still softer on the 
   eye than a purely white background. The ivory nuance also has a warmth that makes it go well together with the other colors on the site.
-  The soft pink color Light Coral (FF7474) was chosen to create a warm and feminine feeling and to pick up on the color from the book in the image
+  The soft pink color Light Coral (#FF7474) was chosen to create a warm and feminine feeling and to pick up on the color from the book in the image
   of the woman reading. This was made to ensure that the associations awokened in the viewer from the first section on the page would continue
   when scrolling down to the next section (recently added books). The brighter pink color Amaranth (#E60045) was chosen to be invigorating and to
   create a sensation of modernness, curiousness and also associate to femininity. This color is used on elements that needs to be immideately visible for
