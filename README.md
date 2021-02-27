@@ -194,7 +194,20 @@ An env.py file is used for storing details about database connection, and this f
 
 #### Differences between wireframes and implemented design
 
-* 
+* In the orginal design, there where links to edit and delete book pages from the navigation bar and icon links at the bottom of index page. This was changed in
+  the implemented design because the functionality of edit and delete books is more intuitive for the user to be found on each book card and accessed from there.
+
+* The edit and delete book functionality was in the original design both found on separate pages and the forms for edit and delete had a dropdown where the user 
+  would choose which book to edit and delete. When the edit and delete functionalities were moved to button links on each book card, the information for that specifik 
+  book where instead picked up from the db through the book id on that card and passed directly in to the edit form. The delete functionality was changed to being a pop
+  up modal that is triggered when the user clicks the delete button on the book card, because that was found to be a more intuitive and familiar way for the user to delete
+  a specific instance, than to be sent to another page for deletion. 
+
+* In the original design, the rate book functionality on add and edit book forms where a dropdown where the user would choose a rating. This was changed in the implemented
+  design to being radiobuttons with different values for rating instead, because it is a more common design and therefor more familiar to the user.
+
+* Since edit book and delete book navigation was moved to book cards, the icon links at the bottom of index page were changed from "add book", "edit boook" and "delete book"
+  to "home" (sending the user to top of the page), "add book" and "contact". 
 
 ## Features
 

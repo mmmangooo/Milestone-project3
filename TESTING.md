@@ -154,16 +154,13 @@ The site has been evaluated using Lighthouse Tool, with the following result:
 ![Lighthouse results for add book page](./readme-assets/readme-images/lighthouse-add_book.png)
 
 #### Contact page:
-![Lighthouse results for contact page](./readme-assets/readme-images/lighthouse-contact.png)
+![Lighthouse results for contact page](./readme-assets/readme-images/contact-lighthouse.png)
 
 #### Edit book page:
-![Lighthouse results for edit book page](./readme-assets/readme-images/lighthouse-edit_book.png)
+![Lighthouse results for edit book page](./readme-assets/readme-images/edit-lighthouse.png)
 
 
-#### Comments on results:
 
-The lower results on accessibility for add book page and edit book page is due to an additonal input element in materialize code, that lacks a label for it. 
-This could not be solved since adding a label to this materialize element overwrote the label for the option element in the html form.
 
 
 ## Solved bugs

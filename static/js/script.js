@@ -4,6 +4,7 @@ $('.sidenav').sidenav();
 $('select').formSelect();
 $('tooltipped').tooltip();
 $('.modal').modal();
+M.updateTextFields();
 
 
 /* Creating upvoting/downvoting functionality on book cards*/
