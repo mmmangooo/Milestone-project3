@@ -121,20 +121,22 @@ The site has been manually tested on the functionality of the following:
 
 ### Validation
 
-HTML code has been validated using the [WC3 Markup Validation Tool](https://validator.w3.org/) with no errors:
+* HTML code has been validated using the [WC3 Markup Validation Tool](https://validator.w3.org/) with no errors:
 
 ![Image of HTML validator result](./readme-assets/readme-images/html-validation.png)
 
 
-CSS code has been validated using the [Jigsaw Validator Tool](https://jigsaw.w3.org/css-validator/) with no errors:
+* CSS code has been validated using the [Jigsaw Validator Tool](https://jigsaw.w3.org/css-validator/) with no errors:
 
 ![Image of CSS validator result](./readme-assets/readme-images/jigsaw-result.png)
 
 
-JavaScript code has been validated using [JSHint](https://jshint.com/) with no errors except for warnings about unused variables, due to these
-being sent through EmailJS API:
+* JavaScript code has been validated using [JSHint](https://jshint.com/) with no errors except for warnings about unused variables, due to these
+  being sent through EmailJS API:
 
 ![Image of JSHint validation result](./readme-assets/readme-images/jshint.png)
+
+* Python code has been validated using [PEP8 Online](http://pep8online.com/) with no errors found
 
 
 

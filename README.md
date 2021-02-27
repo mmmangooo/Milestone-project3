@@ -325,6 +325,10 @@ mail has been successfully sent!" or "Your email was not sent, please try again"
 
 * JavaScript code has been validated using [JSHint](https://jshint.com/)
 
+* Python code has been validated using [PEP8 Online](http://pep8online.com/)
+
+* [Free formater CSS beautifier](https://www.freeformatter.com/css-beautifier.html) was used to ensure proper CSS formatting
+
 
 ## Testing
 

@@ -1,357 +1,359 @@
 @import url('https://fonts.googleapis.com/css2?Antic+Slab&family=Poppins:wght@200;300;400&family=PT+Serif&display=swap');
-
 body {
-    background-color: #fdfcf5d7;
+	background-color: #fdfcf5d7;
 }
+
 
 /* CSS code for page container, div wrapping content on page and footer with the purpose of keeping footer in place on all pages, 
    regardless of the length of the content. Credit for this solution: 
    https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
 
 .page-container {
-    position: relative;
-    min-height: 100vh;
+	position: relative;
+	min-height: 100vh;
 }
+
 
 /* --------------Headers and text elements */
 
 h1 {
-    margin: 4rem 0 0;
-    font-size: 3rem;
-    font-family: 'PT Serif', serif;
-    letter-spacing: 0.04rem;
+	margin: 4rem 0 0;
+	font-size: 3rem;
+	font-family: 'PT Serif', serif;
+	letter-spacing: 0.04rem;
 }
 
 h2 {
-    font-size: 1.3rem;
-    font-family: 'Poppins', sans-serif;
+	font-size: 1.3rem;
+	font-family: 'Poppins', sans-serif;
 }
 
 h3 {
-    font-size: 1.4rem;
-    font-family: 'Poppins', sans-serif;
-    margin: 1rem 0 2rem;
+	font-size: 1.4rem;
+	font-family: 'Poppins', sans-serif;
+	margin: 1rem 0 2rem;
 }
 
 h4 {
-    font-size: 1.3rem;
-    font-family: 'Poppins', sans-serif;
-    
+	font-size: 1.3rem;
+	font-family: 'Poppins', sans-serif;
 }
 
 p {
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
 }
+
 
 /*--------------------- 404 page */
 
 .col-error {
-    margin: 4rem 0 0;
+	margin: 4rem 0 0;
 }
 
 .link-error {
-   margin: 4rem 0 0;
-   font-size: 1.8rem;
+	margin: 4rem 0 0;
+	font-size: 1.8rem;
 }
 
 .link-error a {
-    text-decoration: none;
-    color: #004d40;
+	text-decoration: none;
+	color: #004d40;
 }
 
 .header-error {
-   margin: 2rem 0 4rem;
+	margin: 2rem 0 4rem;
 }
+
 
 /*--------------------- Images */
 
 .woman-reading {
-    width: 30%;
-    margin: 2rem 0 0;
+	width: 30%;
+	margin: 2rem 0 0;
 }
 
 .book-image {
-    width: 35%;
-    position: relative;
-    top: 6rem;
-    right: 8rem;
+	width: 35%;
+	position: relative;
+	top: 6rem;
+	right: 8rem;
 }
 
 
 /* --------------Navigation bar */
 
 .nav-logo {
-    margin-top: 0.3rem;
-    width: 4rem;
+	margin-top: 0.3rem;
+	width: 4rem;
 }
 
 nav ul li a {
-    color: #E60045;
-    font-weight: bold;
+	color: #E60045;
+	font-weight: bold;
 }
 
 .sidenav-trigger {
-    color: #E60045;
+	color: #E60045;
 }
+
 
 /* -------------- Wrapper containers */
 
 .content-wrap {
-    padding-bottom: 6rem;  
+	padding-bottom: 6rem;
 }
 
 .intro-container {
-    padding: 2rem 0 8rem;
-    text-align: center;
+	padding: 2rem 0 8rem;
+	text-align: center;
 }
 
 .recent-books-wrapper {
-    padding: 2rem 0 5rem 0;
-    margin: 0 0 4rem;
-    background-color: #ff7474b0;
+	padding: 2rem 0 5rem 0;
+	margin: 0 0 4rem;
+	background-color: #ff7474b0;
 }
+
 
 /*-------------------- Recently added books */
 
 .recent-header {
-    margin: 1.5rem 0 3rem;
+	margin: 1.5rem 0 3rem;
 }
 
 .recent-card {
-    max-height: 50rem;
+	max-height: 50rem;
 }
 
 
 /*-------------------  Search */
 
 .search-container {
-    width: 95%;
-    margin: 3rem auto 6rem;
-    padding: 0.5rem;
-    border: 0.1rem solid #adaaa1de;
-    border-radius: 1rem;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0,0.2);
-    display: flex;
-    vertical-align: center;
-    justify-content: center;
+	width: 95%;
+	margin: 3rem auto 6rem;
+	padding: 0.5rem;
+	border: 0.1rem solid #adaaa1de;
+	border-radius: 1rem;
+	box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	display: flex;
+	vertical-align: center;
+	justify-content: center;
 }
 
 .search-row {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .search-heading {
-    margin: 25% 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #E60045;
+	margin: 25% 0;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #E60045;
 }
 
 #query {
-    margin: 15% 0 0;
+	margin: 15% 0 0;
 }
 
 .query-btn {
-    margin: 25% 0;
-    background-color: #E60045;
+	margin: 25% 0;
+	background-color: #E60045;
 }
 
 
 /* -----------------------Book cards */
 
 .card {
-    padding: 1rem 1rem 0.2rem;
-    border-radius: 1rem;
-    text-align: center;
-    height: inherit;
+	padding: 1rem 1rem 0.2rem;
+	border-radius: 1rem;
+	text-align: center;
+	height: inherit;
 }
 
 .vote {
-    margin: 1rem 0;
+	margin: 1rem 0;
 }
 
 .vote-btn {
-    display: inline;
-    border: none;
-    background-color: #fff;
-    color: #004d40;
-    text-shadow: none;
-    cursor: pointer;
+	display: inline;
+	border: none;
+	background-color: #fff;
+	color: #004d40;
+	text-shadow: none;
+	cursor: pointer;
 }
 
 .card-hr {
-    margin: 1.5rem auto 1.5rem;
-    border-top: 0.11rem solid #004d40;
-    width: 70%;
+	margin: 1.5rem auto 1.5rem;
+	border-top: 0.11rem solid #004d40;
+	width: 70%;
 }
 
 .modal-trigger {
-    background-color: transparent;
-    border-style: none;
-    text-transform: none;
+	background-color: transparent;
+	border-style: none;
+	text-transform: none;
 }
 
 hr {
-    border-top: 0.15rem solid #004d40;
-    border-bottom: none;
-    border-radius: 6rem;
-    width: 80%;
-    margin-top: 8rem;
-    margin-bottom: 6rem;
+	border-top: 0.15rem solid #004d40;
+	border-bottom: none;
+	border-radius: 6rem;
+	width: 80%;
+	margin-top: 8rem;
+	margin-bottom: 6rem;
 }
 
-.icon-links p{
-    text-decoration: none;
-    color: #004d40;
-    font-weight: bold; 
+.icon-links p {
+	text-decoration: none;
+	color: #004d40;
+	font-weight: bold;
 }
 
 .delete-btn {
-    cursor: pointer;
-    text-shadow: none;
+	cursor: pointer;
+	text-shadow: none;
 }
 
 .delete-icon {
-    margin: 0 0 0.4rem;
+	margin: 0 0 0.4rem;
 }
 
 .delete-txt {
-    display: inline-block;
-    margin: 1.05rem 0 0;
-    color: #004d40;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	margin: 1.05rem 0 0;
+	color: #004d40;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
 }
+
 
 /*--------------------Forms*/
 
 .form-container {
-    margin: 6rem auto;
-    padding: 2rem;
-    border: 0.2rem solid #adaaa1de;
-    border-radius: 1rem;
-    box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2);
+	margin: 6rem auto;
+	padding: 2rem;
+	border: 0.2rem solid #adaaa1de;
+	border-radius: 1rem;
+	box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 label {
-    color: #444138 !important;
-    text-align: left;;
+	color: #444138 !important;
+	text-align: left;
+	;
 }
 
 .form-rate-text {
-    color: #444138;
-    font-size: 0.8rem;
-    margin-left: 0.75rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",Roboto, sans-serif;
-    transition: .2s opacity ease-out, .2s color ease-out;
-    line-height: 1.5;
-    text-align: initial;
+	color: #444138;
+	font-size: 0.8rem;
+	margin-left: 0.75rem;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	transition: .2s opacity ease-out, .2s color ease-out;
+	line-height: 1.5;
+	text-align: initial;
 }
 
 .rating-nr {
-    margin-right: 0.5rem;
+	margin-right: 0.5rem;
 }
 
-[type="radio"]:not(:checked)+span, [type="radio"]:checked+span {
-    padding-left: 2rem;
+[type="radio"]:not(:checked)+span,
+[type="radio"]:checked+span {
+	padding-left: 2rem;
 }
 
 .submit-btn {
-    background-color: #E60045;
+	background-color: #E60045;
 }
 
 
 /*---------------------Contact */
 
 #success-alert p {
-    color: green;
-    font-size: 1.5rem;
+	color: green;
+	font-size: 1.5rem;
 }
 
 #error-alert p {
-    color: red;
-    font-size: 1.5rem;
+	color: red;
+	font-size: 1.5rem;
 }
 
 
 /*--------------------Footer */
 
-
 footer {
-    position: absolute;
-    height: 6rem;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    margin: 6rem 0 0 0;
-    background-color: #E60045;
-    
+	position: absolute;
+	height: 6rem;
+	bottom: 0;
+	width: 100%;
+	padding: 1rem;
+	margin: 6rem 0 0 0;
+	background-color: #E60045;
 }
 
 footer a {
-    text-decoration: none;
-    color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 
 footer p {
-    color: #fff;
+	color: #fff;
 }
 
 
 /*---------------------Media queries */
 
 @media screen and (max-width: 281px) {
-    .card-wrapper {
-        max-height: 55rem;
-    }
+	.card-wrapper {
+		max-height: 55rem;
+	}
 }
 
 @media screen and (min-width: 600px) {
-    .card-wrapper {
-    height: 48rem;
-    padding: 0;
-} 
- .recent-card {
-        height: 45rem;
-    }
+	.card-wrapper {
+		height: 48rem;
+		padding: 0;
+	}
+	.recent-card {
+		height: 45rem;
+	}
 }
 
 @media screen and (min-width: 767px) {
-    .card-wrapper {
-        height: 44rem;
-    }
-    .recent-card {
-        height: 36rem;
-    }
+	.card-wrapper {
+		height: 44rem;
+	}
+	.recent-card {
+		height: 36rem;
+	}
 }
 
 @media screen and (min-width: 992px) {
-   
-    .woman-reading {
-        position: relative;
-        top: 4rem;
-        left: 9rem;
-    }
-    .search-container {
-        width: 30%;
-    }
-     .card-wrapper {
-    height: 46rem;
-}
+	.woman-reading {
+		position: relative;
+		top: 4rem;
+		left: 9rem;
+	}
+	.search-container {
+		width: 30%;
+	}
+	.card-wrapper {
+		height: 46rem;
+	}
 }
 
 @media screen and (min-width: 1200px) {
-   
-    .card {
-        height: 41rem;
-    }
-     .recent-card {
-        height: 29rem;
-    }
-
- .card-wrapper {
-    height: 44rem;
-}
+	.card {
+		height: 41rem;
+	}
+	.recent-card {
+		height: 29rem;
+	}
+	.card-wrapper {
+		height: 44rem;
+	}
 }
