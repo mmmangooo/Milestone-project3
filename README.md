@@ -420,11 +420,15 @@ connection, you will therefore need to set up your own collection on MongoDB and
 
 ### Code
 
-* [Code for passing the date of adding a book to the database](https://kb.objectrocket.com/mongo-db/how-to-insert-a-document-into-a-mongodb-collection-using-python-367#add+the+date+and+time+in+python+when+you+insert+mongodb+documents)
-* [Code for querying the db for 3 most recently added books](https://api.mongodb.com/python/2.0/tutorial.html)
-* [Code for keeping footer in place on every page, regardless of the size of the page content](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
-* [Code for navigation back to specifik part of page after executing search](https://stackoverflow.com/questions/35843675/link-to-a-specific-location-in-a-flask-template)
+* Code for passing the date of adding a book to the database [was found here](https://kb.objectrocket.com/mongo-db/how-to-insert-a-document-into-a-mongodb-collection-using-python-367#add+the+date+and+time+in+python+when+you+insert+mongodb+documents)
+* Code for querying the db for 3 most recently added books [was found here](https://api.mongodb.com/python/2.0/tutorial.html)
+* Code for keeping footer in place on every page, regardless of the size of the page content [was found here]](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
+* Code for navigation back to specifik part of page after executing search [was found here]](https://stackoverflow.com/questions/35843675/link-to-a-specific-location-in-a-flask-template)
 
+### Acknowledgements
+
+* Thanks to mentor Sinead O' Brien for very valuable feedback and guidance
+* Thanks to tutor support for assistance in debugging issues 
 
 
 
