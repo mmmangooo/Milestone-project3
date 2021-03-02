@@ -87,7 +87,7 @@
                                 </label>
                             </div>
                             <div class="col s4">
-                                <button type="submit" class="btn query-btn" name="action" onclick="changeHeader(e)">Search</button>
+                                <button type="submit" class="btn query-btn" name="action" >Search</button>
                             </div>
 
                         </div>
@@ -95,12 +95,16 @@
 
                 </div>
 
-                <!-- Showing all books on the page-->
+                <!-- Showing all books on the page or search results-->
 
                 <div class="book-wrapper">
 
                     {% if books.count() > 0 %}
-                        <h3 class="teal-text text-darken-4 center-align" id="book-header">All books</h3>
+                    {% if search %}
+                        <h3 class="teal-text text-darken-4 center-align">Search Results:</h3>
+                        {% else %} 
+                        <h3 class="teal-text text-darken-4 center-align">All books</h3>
+                        {% endif %}
                         <div class="row book-row">
                             {% for book in books %}
 

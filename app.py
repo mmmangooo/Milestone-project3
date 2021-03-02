@@ -8,6 +8,7 @@ from bson.objectid import ObjectId
 if os.path.exists("env.py"):
     import env
 
+
 # Creating an instance of Flask app
 app = Flask(__name__)
 
@@ -47,7 +48,8 @@ def search():
     datetime_now = datetime.now()
     new_books = mongo.db.books.find(
         {"date_of_adding": {"$lt": datetime_now}}, limit=2).sort("title")
-    return render_template("index.html", books=books, new_books=new_books)
+    return render_template(
+        "index.html", books=books, new_books=new_books, search=True)
 
 
 @app.route("/add_book", methods=["GET", "POST"])

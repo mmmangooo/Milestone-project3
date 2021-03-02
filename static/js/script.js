@@ -19,16 +19,6 @@ $(this).siblings('span').text(counter);
 });
 });
 
-
-/* Changes text in #book-header when user submits books search, to display 'search result' instead of 'all books' */
-
-function changeHeader(e) {
-    console.log('search-btn clicked');
-    $('#book-header').text('Search Results:');
-    e.preventDefault(); 
-};
-
-
 /* Contact form sending emails through emailjs on submission of form */
 
 function sendMail(contactForm) {

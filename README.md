@@ -22,14 +22,14 @@ learning and discovering by exploring new books. In this way, the site aims both
 the reading of feminist literature and to build a sense of community around the reading.
 To further add to this, a future functionality to add to the site could be some kind
 of discussion board for sharing thoughts directly with each other, or to organize 
-book clubs and read and discuss together in person or virtually.
+book clubs and read and discuss books together in person or virtually.
 
 ### Site goals and user goals
 
 The site goals of this website is to:
 * Facilitate finding books in the genre of feminist literature in order to aid in spreading
   this literature to more readers
-* Increase reading by motivating readers by giving the opportunity to share tips on books to read
+* Increase reading of books in this genre through motivating readers by giving the opportunity to share tips on books to read
   and reflections on them to others
 
 The clients goals of this website is to:
@@ -44,7 +44,7 @@ The clients goals of this website is to:
 ### Ideal client
 
 The ideal client for this website is:
-* An reader already interested in feminist literature
+* A reader already interested in feminist literature
 * A person curious about exploring the genre of feminist literature
 * English speaking
 
