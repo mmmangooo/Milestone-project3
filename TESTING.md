@@ -205,3 +205,21 @@ The site has been evaluated using Lighthouse Tool, with the following result:
   This is what the grid looks like after this fix:
 
   ![Image of grid after fixing issue](./readme-assets/readme-images/grid-fixed.png)
+
+* The contact form had an issue where after submission and clearing of form fields, when the page reloaded the form labels where overlapping the input fields. The form looked
+  like this efter reload:
+
+  ![Image of contact form with labels overlapping input fields](./readme-assets/readme-images/contact-issue.png)
+
+  The overlapping issue comes from the fact that the form labels in Materialize are actually loaded overlapping the input fields and are pushed up above the fields when there is 
+  a placeholder in the field or when the field is clicked by the user. Since the contact form has placeholders the labels load above input fields on the contact form in all instances, 
+  but when the form is reloaded after submission the labels overlap the input fields and the placeholders in them.
+
+  According the Materialize documentation [found here](https://materializecss.com/text-inputs.html), issues with labels overlapping input fields can be solved by adding the class
+  "active" to form labels, or by adding M.updateTextFields(); to script to update the text fields when the page is reloaded. These solutions did not solve the issue in this case, 
+  and when searching for an answer to why I found this [post on Stack Overflow](https://stackoverflow.com/questions/40329956/labels-overlapping-prefilled-content-in-materialize). 
+  This explained that Materialize applies the "active" class through javascript and not directly through CSS, which perhaps could explain why the "active" class added in the HTML
+  was not loaded after the clearing and reloading of form. This led to the conclusion that the issue could be solved by "manually" adding the class "active" to labels in the
+  javascript code instead. This solution worked and the contact form then reloaded with form labels in the right place after submitting and clearing form:
+
+  ![Image of contact form with labels in the right place](./readme-assets/readme-images/contact-solved.png) 

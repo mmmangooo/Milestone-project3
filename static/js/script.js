@@ -4,6 +4,7 @@ $('.sidenav').sidenav();
 $('select').formSelect();
 $('tooltipped').tooltip();
 $('.modal').modal();
+/* Updates contact form text fields after submission and clearing of form */
 M.updateTextFields();
 
 
@@ -35,13 +36,13 @@ emailjs.send('default_service', 'template_pzyq6ap', {
         function(response) {
             console.log('success', response);
             $('#success-alert').show();
+            contactForm.reset();
+            $('#contactForm').find('label').addClass('active');    
     },  function(error) {
             console.log('failed', error);
             $('#error-alert').show();
     });
-    
-$('#contactForm')[0].reset();        
-        
+          
 return false;
        
 }
