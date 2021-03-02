@@ -2,42 +2,50 @@
 
 {% block content %}
     <h1 class="center-align teal-text text-darken-4">Contact Us</h1>
-   
+
     <div class="container form-container center-align white">
- <p class="center-align teal-text text-darken-4">Do you have questions, input or feedback , or want to report an error? 
-                        Please fill out this form to contact us!</p>
+        <p class="center-align teal-text text-darken-4">Do you have questions, input or feedback , or want to report an error? 
+                                                            Please fill out this form to contact us!</p>
 
-        <form id="contactForm" onsubmit="return sendMail(this);">
+        <!-- Materialize form-->
+        <form
+            id="contactForm" onsubmit="return sendMail(this);">
 
+            <!-- Input name-->
             <div class="row s12 m6 l4">
                 <div class="input-field col s12 l6">
                     <i class="material-icons prefix teal-text text-darken-4">account_circle</i>
                     <input id="name" name="name" type="text" class="validate" placeholder="Your name" required>
-                    <label class="active" for="name">Name</label>
-                </div>
+                        <label class="active" for="name">Name</label>
+                    </div>
+
+                    <!--Input emailaddress-->
+                    <div class="input-field col s12 l6">
+                        <i class="material-icons prefix teal-text text-darken-4">email</i>
+                        <input id="emailaddress" name="emailaddress" type="email" class="validate" placeholder="Your emailaddress" required>
+                            <label class="active" for="emailaddress">Email</label>
+                        </div>
+
+                        <!-- Input message-->
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix teal-text text-darken-4">mode_edit</i>
+                            <label class="active" for="message">Message</label>
+                            <textarea placeholder="Write your message here" id="message" name="message" class="materialize-textarea validate" minlength="5" maxlength="500" required></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Submit form button-->
+                    <button class="btn submit-btn" type="submit">Send</button>
+                    <div id="success-alert" style="display:none">
+                        <p>Your email has been successfully sent!</p>
+                    </div>
+                    <div id="error-alert" style="display:none">
+                        <p>Your email was not sent, please try again</p>
+                    </div>
 
 
-                <div class="input-field col s12 l6">
-                    <i class="material-icons prefix teal-text text-darken-4">email</i>
-                    <input id="emailaddress" name="emailaddress" type="email" class="validate" placeholder="Your emailaddress" required>
-                    <label class="active" for="emailaddress">Email</label>
-                </div>
+                </form>
 
 
-                <div class="input-field col s12">
-                    <i class="material-icons prefix teal-text text-darken-4">mode_edit</i>
-                    <label class="active" for="message">Message</label>
-                    <textarea placeholder="Write your message here" id="message" name="message" class="materialize-textarea validate" minlength="5" maxlength="500" required></textarea>
-                </div>
             </div>
-            <button class="btn submit-btn" type="submit">Send</button>
-            <div id="success-alert" style="display:none">
-            <p>Your email has been successfully sent!</p></div>
-            <div id="error-alert" style="display:none"><p>Your email was not sent, please try again</p></div>
-
-
-        </form>
-
-
-    </div>
-{% endblock %}
+        {% endblock %}

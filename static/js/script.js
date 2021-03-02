@@ -1,11 +1,9 @@
 $(document).ready(function() {
-/* Initializaton of materialize components */
+/* Initializaton of Materialize components */
 $('.sidenav').sidenav();
 $('select').formSelect();
 $('tooltipped').tooltip();
 $('.modal').modal();
-/* Updates contact form text fields after submission and clearing of form */
-M.updateTextFields();
 
 
 /* Creating upvoting/downvoting functionality on book cards*/
@@ -19,8 +17,17 @@ $('.downVote').click(function() {
     counter--;
 $(this).siblings('span').text(counter);
 });
-
 });
+
+
+/* Changes text in #book-header when user submits books search, to display 'search result' instead of 'all books' */
+
+function changeHeader(e) {
+    console.log('search-btn clicked');
+    $('#book-header').text('Search Results:');
+    e.preventDefault(); 
+};
+
 
 /* Contact form sending emails through emailjs on submission of form */
 
@@ -36,8 +43,8 @@ emailjs.send('default_service', 'template_pzyq6ap', {
         function(response) {
             console.log('success', response);
             $('#success-alert').show();
-            contactForm.reset();
-            $('#contactForm').find('label').addClass('active');    
+            contactForm.reset();  // Clears form input fields when the form is reloaded after submission
+            $('#contactForm').find('label').addClass('active'); // Class "active" on labels pushes them up above input fields   
     },  function(error) {
             console.log('failed', error);
             $('#error-alert').show();
@@ -46,3 +53,4 @@ emailjs.send('default_service', 'template_pzyq6ap', {
 return false;
        
 }
+

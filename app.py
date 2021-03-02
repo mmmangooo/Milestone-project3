@@ -21,6 +21,7 @@ mongo = PyMongo(app)
 
 
 @app.errorhandler(404)
+# Directing the user to custom 404 error page if a requested page is not found
 def page_not_found(error):
     return render_template('404.html')
 
@@ -28,6 +29,7 @@ def page_not_found(error):
 @app.route("/")
 @app.route("/get_books")
 def get_books():
+    # Retrieving all books from db
     books = mongo.db.books.find()
     datetime_now = datetime.now()
     # Querying the db for the 3 most recently added books
@@ -39,6 +41,7 @@ def get_books():
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    # Querying the db for title or author matching the submitted search string
     query = request.form.get("query")
     books = mongo.db.books.find({"$text": {"$search": query}})
     datetime_now = datetime.now()
@@ -70,6 +73,7 @@ def add_book():
 
 @app.route("/edit_book/<book_id>", methods=["GET", "POST"])
 def edit_book(book_id):
+    # Edits the current book in db
     if request.method == "POST":
         submit = {
             "title": request.form.get("title"),
@@ -86,12 +90,14 @@ def edit_book(book_id):
 
 @app.route("/delete_book/<book_id>")
 def delete_book(book_id):
+    # Deletes the current book from db
     mongo.db.books.remove({"_id": ObjectId(book_id)})
     flash("Book successfully deleted")
     return redirect(url_for("get_books"))
 
 
 @app.route("/contact")
+# Navigates to contact page
 def contact():
     return render_template("contact.html")
 

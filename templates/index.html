@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+    <!-- Intro section of landing page-->
     <div class="intro-container" id="intro-container">
         <div class="row">
             <div class="col s12">
@@ -15,6 +17,7 @@
                 </div>
             </div>
 
+            <!-- Displaying the most recently added books-->
             <div class="recent-books-wrapper">
 
                 <h3 class="teal-text text-darken-4 center-align recent-header">Recently added books:</h3>
@@ -25,7 +28,7 @@
 
                             <div class="col s12 m6">
                                 <div class="card recent-card
-                                ">
+                                                                        ">
                                     <h4 class="teal-text text-darken-4">{{ book.title }}</h4>
                                     <p class="grey-text text-darken-3">Author:
                                         {{ book.author }}
@@ -66,12 +69,12 @@
                 </div>
             </div>
 
-
+            <!-- Search for books on page-->
             <div
                 class="search-container white center-align">
 
                 <!-- Credit for navigation back to specifik part of page for search function:
-                                        https://stackoverflow.com/questions/35843675/link-to-a-specific-location-in-a-flask-template -->
+                                                        https://stackoverflow.com/questions/35843675/link-to-a-specific-location-in-a-flask-template -->
 
                 <form action="{{ url_for('search', _anchor='query') }}" method="POST">
                     <div class="row search-row">
@@ -84,13 +87,15 @@
                                 </label>
                             </div>
                             <div class="col s4">
-                                <button type="submit" class="btn query-btn" name="action" onclick="changeHeader()">Search</button>
+                                <button type="submit" class="btn query-btn" name="action" onclick="changeHeader(e)">Search</button>
                             </div>
 
                         </div>
                     </form>
 
                 </div>
+
+                <!-- Showing all books on the page-->
 
                 <div class="book-wrapper">
 
@@ -183,6 +188,8 @@
 
 
                         <hr>
+
+                            <!-- Navigation icon links-->
 
                             <div class="container center-align">
                                 <div class="row">

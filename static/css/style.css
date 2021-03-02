@@ -116,14 +116,15 @@ nav ul li a {
 	background-color: #ff7474b0;
 }
 
+
 /*-------------------- Flash messages */
 
 .flash-container {
-    padding: 0.5rem 0 0;
+	padding: 0.5rem 0 0;
 	border: 0.1rem solid #adaaa1de;
 	border-radius: 1rem;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
+	box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+	margin: 2rem auto;
 }
 
 
@@ -324,6 +325,9 @@ footer p {
 }
 
 @media screen and (min-width: 600px) {
+	.search-container {
+		width: 85%;
+	}
 	.card-wrapper {
 		height: 48rem;
 		padding: 0;
@@ -334,6 +338,9 @@ footer p {
 }
 
 @media screen and (min-width: 767px) {
+	.search-container {
+		width: 75%;
+	}
 	.card-wrapper {
 		height: 44rem;
 	}
@@ -349,7 +356,7 @@ footer p {
 		left: 9rem;
 	}
 	.search-container {
-		width: 30%;
+		width: 35%;
 	}
 	.card-wrapper {
 		height: 46rem;
