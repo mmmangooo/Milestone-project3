@@ -78,7 +78,7 @@ p {
 	width: 35%;
 	position: relative;
 	top: 6rem;
-	right: 8rem;
+	right: 10rem;
 }
 
 
@@ -353,7 +353,7 @@ footer p {
 	.woman-reading {
 		position: relative;
 		top: 4rem;
-		left: 9rem;
+		left: 10rem;
 	}
 	.search-container {
 		width: 35%;
@@ -364,6 +364,12 @@ footer p {
 }
 
 @media screen and (min-width: 1200px) {
+    .woman-reading {
+        left: 14rem;
+    }
+    .book-image {
+        right: 12rem;
+    }
 	.card {
 		height: 41rem;
 	}
